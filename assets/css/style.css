@@ -207,6 +207,15 @@ h1 {
   border: 1px solid #e6edf4;
 }
 
+.hero-image {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.9rem;
+  border: 1px solid #e6edf4;
+}
+
 .hero-card-title {
   font-weight: 700;
   font-size: 1.05rem;
@@ -260,6 +269,27 @@ h1 {
 .card p {
   color: var(--muted);
   margin: 0;
+}
+
+.fleet-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.fleet-gallery figure {
+  margin: 0;
+  background: #fff;
+  border: 1px solid #e4ebf2;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.fleet-gallery img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
 }
 
 .compact .card {
@@ -440,7 +470,8 @@ blockquote cite {
 
   .three-col,
   .steps,
-  .footer-grid {
+  .footer-grid,
+  .fleet-gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -472,7 +503,8 @@ blockquote cite {
 
   .three-col,
   .steps,
-  .footer-grid {
+  .footer-grid,
+  .fleet-gallery {
     grid-template-columns: 1fr;
   }
 
