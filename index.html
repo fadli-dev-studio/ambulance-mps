@@ -178,13 +178,13 @@
           FD
         </div>
         <p class="text-[11px] uppercase tracking-[0.24em] text-slate-500 mb-3">
-          Preview Website
+          Informasi Preview
         </p>
         <h2 class="font-headline text-2xl sm:text-3xl font-extrabold text-on-surface mb-3">
-          Ini adalah website preview dari Fadli Dev Studio
+          Website ini merupakan preview dari Fadli Dev Studio
         </h2>
         <p class="text-secondary text-sm sm:text-base leading-relaxed mb-6">
-          Tampilan ini digunakan untuk peninjauan awal sebelum finalisasi lebih lanjut.
+          Tampilan ini ditujukan untuk peninjauan awal sebelum proses finalisasi dan publikasi resmi.
         </p>
         <button
           type="button"
@@ -810,85 +810,95 @@
         </h2>
         <div class="space-y-4">
           <div
-            class="bg-surface-container-lowest rounded-xl p-6 ambient-shadow"
+            class="faq-item bg-surface-container-lowest rounded-xl p-6 ambient-shadow"
           >
             <button
-              class="w-full flex justify-between items-start gap-4 text-left font-bold text-base sm:text-lg"
+              class="faq-trigger w-full flex justify-between items-start gap-4 text-left font-bold text-base sm:text-lg"
+              aria-expanded="true"
+              type="button"
             >
               Berapa lama waktu respon tim?
-              <span class="material-symbols-outlined text-primary shrink-0"
+              <span class="material-symbols-outlined text-primary shrink-0 transition-transform duration-300"
                 >expand_more</span
               >
             </button>
-            <div class="mt-4 text-secondary text-sm leading-relaxed">
+            <div class="faq-answer mt-4 text-secondary text-sm leading-relaxed">
               Kami menargetkan waktu tiba di lokasi dalam 15-30 menit untuk
               wilayah Jabodetabek, tergantung pada kondisi lalu lintas dan
               ketersediaan unit terdekat.
             </div>
           </div>
           <div
-            class="bg-surface-container-lowest rounded-xl p-6 ambient-shadow"
+            class="faq-item bg-surface-container-lowest rounded-xl p-6 ambient-shadow"
           >
             <button
-              class="w-full flex justify-between items-start gap-4 text-left font-bold text-base sm:text-lg"
+              class="faq-trigger w-full flex justify-between items-start gap-4 text-left font-bold text-base sm:text-lg"
+              aria-expanded="false"
+              type="button"
             >
               Apakah tersedia Ambulance VIP untuk perjalanan pasien?
-              <span class="material-symbols-outlined text-primary shrink-0"
+              <span class="material-symbols-outlined text-primary shrink-0 transition-transform duration-300"
                 >expand_more</span
               >
             </button>
-            <div class="mt-4 text-secondary text-sm leading-relaxed">
+            <div class="faq-answer hidden mt-4 text-secondary text-sm leading-relaxed">
               Ya. Ambulance VIP tersedia untuk pasien yang membutuhkan armada
               premium dengan kenyamanan, privasi, dan ketenangan lebih selama
               perjalanan medis.
             </div>
           </div>
           <div
-            class="bg-surface-container-lowest rounded-xl p-6 ambient-shadow"
+            class="faq-item bg-surface-container-lowest rounded-xl p-6 ambient-shadow"
           >
             <button
-              class="w-full flex justify-between items-start gap-4 text-left font-bold text-base sm:text-lg"
+              class="faq-trigger w-full flex justify-between items-start gap-4 text-left font-bold text-base sm:text-lg"
+              aria-expanded="false"
+              type="button"
             >
               Apakah melayani Ambulance Jenazah ke luar kota?
-              <span class="material-symbols-outlined text-primary shrink-0"
+              <span class="material-symbols-outlined text-primary shrink-0 transition-transform duration-300"
                 >expand_more</span
               >
             </button>
-            <div class="mt-4 text-secondary text-sm leading-relaxed">
+            <div class="faq-answer hidden mt-4 text-secondary text-sm leading-relaxed">
               Ya, kami melayani pengantaran jenazah ke dalam maupun luar kota
               dengan proses yang tertib, penuh hormat, dan penanganan yang
               berempati kepada keluarga.
             </div>
           </div>
           <div
-            class="bg-surface-container-lowest rounded-xl p-6 ambient-shadow"
+            class="faq-item bg-surface-container-lowest rounded-xl p-6 ambient-shadow"
           >
             <button
-              class="w-full flex justify-between items-start gap-4 text-left font-bold text-base sm:text-lg"
+              class="faq-trigger w-full flex justify-between items-start gap-4 text-left font-bold text-base sm:text-lg"
+              aria-expanded="false"
+              type="button"
             >
               Kapan sebaiknya menggunakan Ambulance Evakuasi?
-              <span class="material-symbols-outlined text-primary shrink-0"
+              <span class="material-symbols-outlined text-primary shrink-0 transition-transform duration-300"
                 >expand_more</span
               >
             </button>
-            <div class="mt-4 text-secondary text-sm leading-relaxed">
+            <div class="faq-answer hidden mt-4 text-secondary text-sm leading-relaxed">
               Ambulance Evakuasi digunakan untuk kondisi darurat atau kritis yang
               membutuhkan penjemputan cepat dan pemindahan pasien ke fasilitas
               kesehatan terdekat dengan prioritas keselamatan tinggi.
             </div>
           </div>
           <div
-            class="bg-surface-container-lowest rounded-xl p-6 ambient-shadow"
+            class="faq-item bg-surface-container-lowest rounded-xl p-6 ambient-shadow"
           >
             <button
-              class="w-full flex justify-between items-start gap-4 text-left font-bold text-base sm:text-lg"
+              class="faq-trigger w-full flex justify-between items-start gap-4 text-left font-bold text-base sm:text-lg"
+              aria-expanded="false"
+              type="button"
             >
               Apakah bisa sewa Ambulance Event untuk acara tertentu?
-              <span class="material-symbols-outlined text-primary shrink-0"
+              <span class="material-symbols-outlined text-primary shrink-0 transition-transform duration-300"
                 >expand_more</span
               >
             </button>
-            <div class="mt-4 text-secondary text-sm leading-relaxed">
+            <div class="faq-answer hidden mt-4 text-secondary text-sm leading-relaxed">
               Bisa. Kami menyediakan Ambulance Event (Standby Medis) untuk
               kegiatan olahraga, acara perusahaan, konser, dan kebutuhan acara
               lain yang memerlukan kesiapsiagaan medis di lokasi.
@@ -1011,6 +1021,7 @@
       (() => {
         const previewPopup = document.getElementById("preview-popup");
         const previewPopupClose = document.getElementById("preview-popup-close");
+        const faqItems = Array.from(document.querySelectorAll(".faq-item"));
         const slider = document.getElementById("armada-slider");
         const prev = document.getElementById("armada-prev");
         const next = document.getElementById("armada-next");
@@ -1076,6 +1087,34 @@
         };
 
         previewPopupClose?.addEventListener("click", closePreviewPopup);
+
+        if (faqItems.length) {
+          faqItems.forEach((item) => {
+            const trigger = item.querySelector(".faq-trigger");
+            const answer = item.querySelector(".faq-answer");
+            const icon = trigger?.querySelector(".material-symbols-outlined");
+
+            trigger?.addEventListener("click", () => {
+              const isOpen = trigger.getAttribute("aria-expanded") === "true";
+
+              faqItems.forEach((faqItem) => {
+                const faqTrigger = faqItem.querySelector(".faq-trigger");
+                const faqAnswer = faqItem.querySelector(".faq-answer");
+                const faqIcon = faqTrigger?.querySelector(".material-symbols-outlined");
+
+                faqTrigger?.setAttribute("aria-expanded", "false");
+                faqAnswer?.classList.add("hidden");
+                faqIcon?.classList.remove("rotate-180");
+              });
+
+              if (!isOpen) {
+                trigger.setAttribute("aria-expanded", "true");
+                answer?.classList.remove("hidden");
+                icon?.classList.add("rotate-180");
+              }
+            });
+          });
+        }
 
         if (slider && prev && next) {
           prev.addEventListener("click", () => {
@@ -1225,24 +1264,36 @@
             <li>
               <a
                 class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:translate-x-1 transition-transform duration-200 block"
-                href="tel:081283745843"
-                >Hubungi Darurat</a
+                href="#layanan"
+                >Antar Jemput Pasien</a
               >
             </li>
             <li>
               <a
                 class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:translate-x-1 transition-transform duration-200 block"
-                href="#lokasi"
-                >Lokasi & Area Layanan</a
+                href="#layanan"
+                >Ambulance VIP</a
               >
             </li>
             <li>
               <a
                 class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:translate-x-1 transition-transform duration-200 block"
-                href="https://wa.me/6281283745843"
-                target="_blank"
-                rel="noopener noreferrer"
-                >WhatsApp 24 Jam</a
+                href="#layanan"
+                >Ambulance Jenazah</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:translate-x-1 transition-transform duration-200 block"
+                href="#layanan"
+                >Ambulance Evakuasi</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:translate-x-1 transition-transform duration-200 block"
+                href="#layanan"
+                >Ambulance Event</a
               >
             </li>
           </ul>
