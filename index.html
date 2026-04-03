@@ -1,306 +1,1030 @@
-<!DOCTYPE html>
-<html lang="id">
+<!doctype html>
+
+<html class="light" lang="id">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="AMBULANCE MUHAMMAD PUTRA SERVICE menyediakan layanan ambulance 24 jam untuk darurat dan non-darurat dengan respon cepat dan tim profesional."
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
+      rel="stylesheet"
     />
-    <title>AMBULANCE MUHAMMAD PUTRA SERVICE | Layanan Ambulance 24 Jam</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              secondary: "#4a5f7f",
+              "on-tertiary": "#ffffff",
+              "tertiary-fixed-dim": "#3de273",
+              surface: "#f7fafd",
+              "inverse-primary": "#ffb4ac",
+              "on-tertiary-fixed-variant": "#005322",
+              "on-surface": "#181c1e",
+              "error-container": "#ffdad6",
+              "on-primary-fixed": "#410003",
+              "surface-dim": "#d7dadd",
+              tertiary: "#005d27",
+              "on-tertiary-container": "#8effa3",
+              "inverse-surface": "#2d3133",
+              "surface-container-highest": "#e0e3e6",
+              "outline-variant": "#e4beba",
+              background: "#f7fafd",
+              "on-primary": "#ffffff",
+              "surface-container-low": "#f1f4f7",
+              "inverse-on-surface": "#eef1f4",
+              "secondary-fixed": "#d4e3ff",
+              "on-secondary": "#ffffff",
+              "on-primary-fixed-variant": "#93000e",
+              primary: "#a20513",
+              "on-error": "#ffffff",
+              "secondary-container": "#c2d8fe",
+              "on-error-container": "#93000a",
+              "surface-bright": "#f7fafd",
+              "on-surface-variant": "#5b403d",
+              "primary-container": "#c62828",
+              "on-secondary-fixed-variant": "#324866",
+              "tertiary-fixed": "#66ff8e",
+              "on-primary-container": "#ffe0dd",
+              "surface-container": "#ebeef1",
+              error: "#ba1a1a",
+              "surface-container-high": "#e5e8eb",
+              "on-secondary-fixed": "#021c39",
+              "on-tertiary-fixed": "#002109",
+              "primary-fixed-dim": "#ffb4ac",
+              "secondary-fixed-dim": "#b2c8ed",
+              "surface-variant": "#e0e3e6",
+              "on-secondary-container": "#495e7e",
+              "tertiary-container": "#007834",
+              "surface-tint": "#b91d20",
+              outline: "#8f706c",
+              "on-background": "#181c1e",
+              "primary-fixed": "#ffdad6",
+              "surface-container-lowest": "#ffffff",
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "0.5rem",
+              xl: "1.5rem",
+              full: "9999px",
+            },
+            fontFamily: {
+              headline: ["Plus Jakarta Sans"],
+              body: ["Inter"],
+              label: ["Inter"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .glass-nav {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(24px);
+      }
+      .hero-gradient {
+        background: linear-gradient(135deg, #a20513 0%, #c62828 100%);
+      }
+      .life-line {
+        width: 2px;
+        height: 48px;
+        background-color: #a20513;
+      }
+      .ghost-border {
+        border-bottom: 1px solid rgba(228, 190, 186, 0.15);
+      }
+      .ambient-shadow {
+        box-shadow: 0 20px 40px rgba(15, 39, 68, 0.08);
+      }
+    </style>
   </head>
-  <body>
-    <div class="topbar">
-      <div class="container topbar-inner">
-        <p><strong>24 Jam Siaga:</strong> <a href="tel:+6281283745843">0812-8374-5843</a></p>
-        <p><strong>Area:</strong> [Jabodetabek & Sekitarnya]</p>
-        <a class="btn btn-whatsapp btn-sm" href="https://wa.me/6281283745843" target="_blank" rel="noopener noreferrer">Chat WhatsApp 24 Jam</a>
+  <body class="bg-surface font-body text-on-surface">
+    <!-- Top Contact Bar -->
+    <div
+      class="bg-on-secondary-fixed text-on-secondary h-12 hidden md:flex items-center"
+    >
+      <div
+        class="max-w-7xl mx-auto w-full px-8 flex justify-between items-center text-xs font-medium tracking-wide"
+      >
+        <div class="flex items-center gap-6">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm">location_on</span>
+            Kelapa Gading, Jakarta Utara
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm">call</span>
+            0812-8374-5843
+          </div>
+        </div>
+        <div class="flex items-center gap-6">
+          <span class="opacity-70">Ikuti Kami:</span>
+          <div class="flex gap-4">
+            <span class="material-symbols-outlined text-sm">share</span>
+            <span class="material-symbols-outlined text-sm">emergency</span>
+          </div>
+        </div>
       </div>
     </div>
-
-    <header id="site-header" class="site-header">
-      <div class="container nav-wrap">
-        <a href="#hero" class="brand">
-          <span class="brand-badge">AMP</span>
-          <span>AMBULANCE MUHAMMAD PUTRA SERVICE</span>
-        </a>
-
-        <button id="menu-toggle" class="menu-toggle" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="primary-nav">
-          ☰
-        </button>
-
-        <nav id="primary-nav" class="nav" aria-label="Navigasi utama">
-          <a href="#layanan-utama">Layanan</a>
-          <a href="#armada">Armada</a>
-          <a href="#keunggulan">Keunggulan</a>
-          <a href="#detail-layanan">Detail</a>
-          <a href="#cakupan">Cakupan</a>
-          <a href="#langkah">Pemesanan</a>
-          <a href="#faq">FAQ</a>
-          <a class="btn btn-primary btn-sm" href="tel:+6281283745843">Hubungi Sekarang</a>
-        </nav>
+    <!-- TopAppBar -->
+    <nav
+      class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm h-20"
+    >
+      <div
+        class="flex justify-between items-center h-20 px-8 max-w-7xl mx-auto"
+      >
+        <div
+          class="text-xl font-extrabold tracking-tighter text-slate-900 dark:text-white"
+        >
+          AMBULANCE MUHAMMAD PUTRA SERVICE
+        </div>
+        <div class="hidden md:flex gap-8 items-center">
+          <a
+            class="text-red-700 dark:text-red-500 border-b-2 border-red-700 pb-1 font-['Plus_Jakarta_Sans'] font-semibold text-sm tracking-tight"
+            href="#"
+            >Beranda</a
+          >
+          <a
+            class="text-slate-600 dark:text-slate-400 hover:text-red-600 transition-colors font-['Plus_Jakarta_Sans'] font-semibold text-sm tracking-tight"
+            href="#layanan"
+            >Layanan</a
+          >
+          <a
+            class="text-slate-600 dark:text-slate-400 hover:text-red-600 transition-colors font-['Plus_Jakarta_Sans'] font-semibold text-sm tracking-tight"
+            href="#lokasi"
+            >Tentang Kami</a
+          >
+          <a
+            class="text-slate-600 dark:text-slate-400 hover:text-red-600 transition-colors font-['Plus_Jakarta_Sans'] font-semibold text-sm tracking-tight"
+            href="#faq"
+            >FAQ</a
+          >
+        </div>
+        <div class="flex items-center gap-4">
+          <a
+            href="tel:081283745843"
+            class="bg-primary text-on-primary px-6 py-2.5 rounded-lg text-sm font-bold active:scale-95 duration-150 ease-in-out inline-flex items-center"
+          >
+            Hubungi Ambulans Sekarang
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <header class="relative pt-32 pb-24 overflow-hidden">
+      <div
+        class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-16 items-center"
+      >
+        <div class="relative z-10">
+          <div class="life-line mb-6"></div>
+          <h1
+            class="font-headline text-5xl md:text-7xl font-extrabold leading-[1.1] text-on-surface mb-8 tracking-tight"
+          >
+            Layanan Ambulans <span class="text-primary">24 Jam</span>, Cepat,
+            Terpercaya.
+          </h1>
+          <p class="text-lg text-secondary mb-10 max-w-lg leading-relaxed">
+            Siap melayani kebutuhan ambulans 24 jam untuk penjemputan pasien,
+            rujukan antar rumah sakit, dan standby medis dengan respon cepat di
+            area Jabodetabek dan sekitarnya.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a
+              href="tel:081283745843"
+              class="bg-primary text-on-primary px-8 py-4 rounded-lg font-bold flex items-center justify-center gap-3 ambient-shadow hover:bg-primary-container transition-all"
+            >
+              <span class="material-symbols-outlined">call</span>
+              Hubungi Ambulans Sekarang
+            </a>
+            <a
+              href="https://wa.me/6281283745843"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-tertiary text-on-tertiary px-8 py-4 rounded-lg font-bold flex items-center justify-center gap-3 hover:opacity-90 transition-all"
+            >
+              <span class="material-symbols-outlined">chat</span>
+              Chat WhatsApp 24 Jam
+            </a>
+          </div>
+        </div>
+        <div class="relative lg:-mr-32">
+          <div class="rounded-xl overflow-hidden aspect-[4/3] ambient-shadow">
+            <img
+              alt="Modern Ambulance"
+              class="w-full h-full object-cover"
+              data-alt="Modern high-tech ambulance vehicle parked in front of a modern medical facility with professional medical crew standing confidently by its side"
+              src="assets/images/ambulance-fleet-01.jpeg"
+            />
+          </div>
+          <div
+            class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-xl ambient-shadow max-w-xs"
+          >
+            <div class="flex items-center gap-4 mb-2">
+              <div
+                class="w-3 h-3 rounded-full bg-tertiary-fixed-dim animate-pulse"
+              ></div>
+              <span
+                class="font-bold text-sm tracking-wider uppercase text-on-surface-variant"
+                >Status: Siaga 24/7</span
+              >
+            </div>
+            <p class="text-xs text-secondary italic leading-relaxed">
+              "Respon cepat dalam hitungan menit untuk menjamin keselamatan
+              pasien."
+            </p>
+          </div>
+        </div>
       </div>
     </header>
-
-    <main>
-      <section id="hero" class="hero">
-        <div class="container hero-grid">
-          <div>
-            <p class="eyebrow">Layanan Ambulance Profesional • 24 Jam</p>
-            <h1>Layanan Ambulance 24 Jam yang Cepat, Aman, dan Terpercaya</h1>
-            <p class="lead">
-              AMBULANCE MUHAMMAD PUTRA SERVICE siap melayani kebutuhan transportasi medis,
-              antar jemput pasien, standby event, dan rujukan dengan armada siap jalan serta
-              tim yang responsif.
-            </p>
-            <div class="cta-group">
-              <a class="btn btn-primary" href="tel:+6281283745843">Hubungi Ambulance Sekarang</a>
-              <a class="btn btn-whatsapp" href="https://wa.me/6281283745843" target="_blank" rel="noopener noreferrer">Chat WhatsApp 24 Jam</a>
-            </div>
-            <ul class="hero-points">
-              <li>Respon cepat untuk kebutuhan urgent</li>
-              <li>Layanan dalam kota & luar kota</li>
-              <li>Booking mudah via telepon/WhatsApp</li>
-            </ul>
-          </div>
-          <aside class="hero-card">
+    <!-- Services Highlight (Bento) -->
+    <section id="layanan" class="py-24 bg-surface-container-low">
+      <div class="max-w-7xl mx-auto px-8">
+        <div class="text-center mb-16">
+          <span
+            class="text-primary font-bold tracking-[0.2em] uppercase text-xs mb-4 block"
+            >Layanan Kami</span
+          >
+          <h2 class="font-headline text-4xl font-bold text-on-surface">
+            Solusi Medis Komprehensif
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[600px]">
+          <div
+            class="md:col-span-8 bg-surface-container-lowest rounded-xl p-8 flex flex-col justify-end relative overflow-hidden group"
+          >
             <img
-              class="hero-image"
-              src="assets/images/ambulance-fleet-01.jpeg"
-              alt="Armada ambulance AMBULANCE MUHAMMAD PUTRA SERVICE siap siaga"
-              loading="eager"
+              class="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:scale-105 transition-transform duration-700"
+              data-alt="interior of a modern ambulance with advanced medical equipment and life support systems, bright sterile lighting"
+                src="assets/images/ambulance-fleet-02.jpeg"
             />
-            <p class="hero-card-title">Siap Berangkat</p>
-            <p>Armada bersih • Peralatan siap pakai • Tim profesional</p>
-            <div class="status">
-              <span class="dot"></span>
-              <span>Unit Siaga 24 Jam</span>
+            <div class="relative z-10">
+              <span
+                class="material-symbols-outlined text-4xl text-primary mb-4"
+                data-weight="fill"
+                >emergency</span
+              >
+              <h3 class="text-2xl font-bold mb-2">Ambulance Gawat Darurat</h3>
+              <p class="text-secondary max-w-md">
+                 Dilengkapi perlengkapan medis esensial dan didukung tim yang siap
+                 membantu penanganan pasien dalam kondisi darurat.
+              </p>
             </div>
-          </aside>
-        </div>
-      </section>
-
-      <section id="armada" class="section">
-        <div class="container">
-          <h2>Preview Armada Ambulance</h2>
-          <p class="section-subtitle">Dokumentasi unit yang siap melayani kebutuhan transportasi medis dan rujukan pasien.</p>
-          <div class="fleet-gallery">
-            <figure>
-              <img src="assets/images/ambulance-fleet-02.jpeg" alt="Unit ambulance siap operasional 1" loading="lazy" />
-            </figure>
-            <figure>
-              <img src="assets/images/ambulance-fleet-03.jpeg" alt="Unit ambulance siap operasional 2" loading="lazy" />
-            </figure>
-            <figure>
-              <img src="assets/images/ambulance-fleet-04.jpeg" alt="Unit ambulance siap operasional 3" loading="lazy" />
-            </figure>
-            <figure>
-              <img src="assets/images/ambulance-fleet-05.jpeg" alt="Unit ambulance siap operasional 4" loading="lazy" />
-            </figure>
-            <figure>
-              <img src="assets/images/ambulance-fleet-06.jpeg" alt="Unit ambulance siap operasional 5" loading="lazy" />
-            </figure>
-            <figure>
-              <img src="assets/images/ambulance-fleet-07.jpeg" alt="Unit ambulance siap operasional 6" loading="lazy" />
-            </figure>
-            <figure>
-              <img src="assets/images/ambulance-fleet-08.jpeg" alt="Unit ambulance siap operasional 7" loading="lazy" />
-            </figure>
           </div>
-        </div>
-      </section>
-
-      <section id="layanan-utama" class="section bg-soft">
-        <div class="container">
-          <h2>Layanan Utama</h2>
-          <p class="section-subtitle">Layanan ambulance lengkap untuk kebutuhan darurat maupun non-darurat.</p>
-          <div class="cards three-col">
-            <article class="card">
-              <h3>Ambulance Gawat Darurat</h3>
-              <p>Penanganan transportasi pasien urgent dengan respon cepat dan koordinasi tepat.</p>
-            </article>
-            <article class="card">
-              <h3>Antar Jemput Pasien</h3>
-              <p>Layanan antar jemput dari rumah, klinik, atau rumah sakit secara aman dan nyaman.</p>
-            </article>
-            <article class="card">
-              <h3>Rujukan / Pindah RS</h3>
-              <p>Transfer pasien antar fasilitas kesehatan dengan pendampingan profesional.</p>
-            </article>
-            <article class="card">
-              <h3>Standby Medis Event</h3>
-              <p>Dukungan ambulance untuk kegiatan publik, acara komunitas, hingga event perusahaan.</p>
-            </article>
-            <article class="card">
-              <h3>Ambulance Jenazah</h3>
-              <p>Layanan pengantaran jenazah dengan proses yang tertib, sopan, dan tepat waktu.</p>
-            </article>
-            <article class="card">
-              <h3>Perjalanan Luar Kota</h3>
-              <p>Siap melayani pengantaran pasien dalam kota maupun luar kota sesuai kebutuhan keluarga.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="keunggulan" class="section">
-        <div class="container">
-          <h2>Kenapa Memilih Kami</h2>
-          <div class="cards three-col compact">
-            <article class="card"><h3>24 Jam Siaga</h3><p>Tim siap merespon kapan pun Anda membutuhkan.</p></article>
-            <article class="card"><h3>Respon Cepat</h3><p>Alur pemesanan ringkas agar unit lebih cepat diberangkatkan.</p></article>
-            <article class="card"><h3>Armada Siap Operasi</h3><p>Kondisi kendaraan terjaga, bersih, dan siap digunakan.</p></article>
-            <article class="card"><h3>Tim Profesional</h3><p>Didukung sopir berpengalaman dan pendampingan yang humanis.</p></article>
-            <article class="card"><h3>Booking Mudah</h3><p>Cukup telepon atau WhatsApp, kami bantu dari awal hingga selesai.</p></article>
-            <article class="card"><h3>Fleksibel Kebutuhan</h3><p>Untuk personal, fasilitas kesehatan, maupun kebutuhan event.</p></article>
-          </div>
-        </div>
-      </section>
-
-      <section id="detail-layanan" class="section bg-soft">
-        <div class="container split">
-          <div>
-            <h2>Detail Layanan</h2>
-            <p class="section-subtitle">Setiap kebutuhan memiliki penanganan yang berbeda, kami bantu pilihkan layanan paling tepat.</p>
-            <ul class="checklist">
-              <li>Konsultasi kebutuhan awal untuk menentukan jenis layanan.</li>
-              <li>Estimasi rute dan waktu keberangkatan secara jelas.</li>
-              <li>Pendampingan komunikasi selama proses penjemputan/pengantaran.</li>
-              <li>Koordinasi layanan untuk kebutuhan rujukan antar rumah sakit.</li>
-            </ul>
-          </div>
-          <aside class="info-box">
-            <h3>Butuh Bantuan Cepat?</h3>
-            <p>Tim kami akan merespon secepat mungkin untuk kebutuhan ambulance Anda.</p>
-            <a class="btn btn-primary" href="tel:+6281283745843">Telepon Sekarang</a>
-          </aside>
-        </div>
-      </section>
-
-      <section id="cakupan" class="section">
-        <div class="container">
-          <h2>Area Cakupan</h2>
-          <p class="section-subtitle">Melayani area utama berikut dan siap diskusikan kebutuhan rute khusus.</p>
-          <div class="areas">
-            <span>[Jakarta]</span>
-            <span>[Bogor]</span>
-            <span>[Depok]</span>
-            <span>[Tangerang]</span>
-            <span>[Bekasi]</span>
-            <span>[Luar Kota - Sesuai Permintaan]</span>
-          </div>
-        </div>
-      </section>
-
-      <section id="langkah" class="section bg-soft">
-        <div class="container">
-          <h2>Langkah Pemesanan</h2>
-          <div class="steps">
-            <article>
-              <span>1</span>
-              <h3>Hubungi Tim</h3>
-              <p>Telepon atau WhatsApp kami untuk informasi awal.</p>
-            </article>
-            <article>
-              <span>2</span>
-              <h3>Informasikan Kebutuhan</h3>
-              <p>Sampaikan lokasi, kondisi, dan jenis layanan yang dibutuhkan.</p>
-            </article>
-            <article>
-              <span>3</span>
-              <h3>Ambulance Diberangkatkan</h3>
-              <p>Tim menyiapkan unit sesuai kebutuhan dan segera menuju lokasi.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="trust" class="section">
-        <div class="container">
-          <h2>Dipercaya untuk Layanan Medis Transportasi</h2>
-          <div class="trust-grid">
-            <div class="trust-badges">
-              <p class="badge">✅ Layanan 24 Jam</p>
-              <p class="badge">✅ Armada Siap Jalan</p>
-              <p class="badge">✅ Tim Responsif</p>
-              <p class="badge">✅ Proses Booking Cepat</p>
+          <div
+            class="md:col-span-4 bg-primary text-on-primary rounded-xl p-8 flex flex-col justify-between hover:bg-primary-container transition-colors"
+          >
+            <span class="material-symbols-outlined text-4xl">move_up</span>
+            <div>
+              <h3 class="text-xl font-bold mb-2">Transportasi Pasien</h3>
+              <p class="opacity-80 text-sm">
+                 Layanan antar-jemput pasien dari rumah ke rumah sakit, antar
+                 fasilitas kesehatan, atau kembali ke rumah dengan aman.
+              </p>
             </div>
-            <blockquote>
-              “Respon cepat dan komunikasinya sangat membantu keluarga kami saat butuh rujukan pasien.”
-              <cite>— [Nama Pelanggan]</cite>
-            </blockquote>
           </div>
-        </div>
-      </section>
-
-      <section id="faq" class="section bg-soft">
-        <div class="container">
-          <h2>Pertanyaan yang Sering Diajukan</h2>
-          <div class="faq-list" role="list">
-            <article class="faq-item">
-              <button class="faq-question" aria-expanded="false">Apakah layanan tersedia 24 jam?</button>
-              <div class="faq-answer"><p>Ya, layanan AMBULANCE MUHAMMAD PUTRA SERVICE tersedia 24 jam setiap hari.</p></div>
-            </article>
-            <article class="faq-item">
-              <button class="faq-question" aria-expanded="false">Apakah bisa untuk dalam kota dan luar kota?</button>
-              <div class="faq-answer"><p>Bisa. Kami melayani rute dalam kota dan luar kota sesuai kebutuhan.</p></div>
-            </article>
-            <article class="faq-item">
-              <button class="faq-question" aria-expanded="false">Apakah bisa booking mendadak?</button>
-              <div class="faq-answer"><p>Bisa. Hubungi kami segera agar tim dapat memproses kebutuhan secepat mungkin.</p></div>
-            </article>
-            <article class="faq-item">
-              <button class="faq-question" aria-expanded="false">Layanan apa saja yang tersedia?</button>
-              <div class="faq-answer"><p>Tersedia layanan darurat, antar jemput pasien, rujukan, standby event, dan ambulance jenazah.</p></div>
-            </article>
-            <article class="faq-item">
-              <button class="faq-question" aria-expanded="false">Apakah tersedia standby ambulance untuk event?</button>
-              <div class="faq-answer"><p>Tersedia. Tim kami siap menyesuaikan kebutuhan event komunitas maupun perusahaan.</p></div>
-            </article>
-            <article class="faq-item">
-              <button class="faq-question" aria-expanded="false">Bagaimana cara menghubungi tim dengan cepat?</button>
-              <div class="faq-answer"><p>Silakan klik tombol telepon atau WhatsApp di halaman ini untuk respon yang lebih cepat.</p></div>
-            </article>
+          <div
+            class="md:col-span-4 bg-surface-container-lowest rounded-xl p-8 flex flex-col justify-between border border-outline-variant/10"
+          >
+            <span class="material-symbols-outlined text-4xl text-secondary"
+              >event_available</span
+            >
+            <div>
+              <h3 class="text-xl font-bold mb-2">Event Medical Standby</h3>
+              <p class="text-secondary text-sm">
+                 Penyediaan tim medis dan unit ambulans untuk acara olahraga,
+                 konser, dan gathering.
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
-
-      <section id="final-cta" class="section final-cta">
-        <div class="container">
-          <h2>Butuh Ambulance Sekarang?</h2>
-          <p>Jangan tunda saat kondisi mendesak. Hubungi tim kami sekarang untuk respon cepat.</p>
-          <div class="cta-group center">
-            <a class="btn btn-primary" href="tel:+6281283745843">Hubungi Ambulance Sekarang</a>
-            <a class="btn btn-whatsapp" href="https://wa.me/6281283745843" target="_blank" rel="noopener noreferrer">Chat WhatsApp 24 Jam</a>
+          <div
+            class="md:col-span-8 bg-on-secondary-fixed text-on-secondary rounded-xl p-8 flex flex-col justify-end relative overflow-hidden"
+          >
+            <div class="relative z-10">
+              <span
+                class="material-symbols-outlined text-4xl text-tertiary-fixed mb-4"
+                >flight_land</span
+              >
+              <h3 class="text-2xl font-bold mb-2">Repatriasi Medis</h3>
+              <p class="opacity-70 max-w-md">
+                 Layanan perjalanan pasien terjadwal untuk rujukan atau pemindahan
+                 dengan pendampingan sesuai kebutuhan.
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div>
-          <h3>AMBULANCE MUHAMMAD PUTRA SERVICE</h3>
-          <p>Layanan ambulance profesional, cepat tanggap, dan siap 24 jam.</p>
-        </div>
-        <div>
-          <h4>Kontak</h4>
-          <p>Telepon: <a href="tel:+6281283745843">0812-8374-5843</a></p>
-          <p>WhatsApp: <a href="https://wa.me/6281283745843" target="_blank" rel="noopener noreferrer">0812-8374-5843</a></p>
-          <p>Email: <a href="mailto:fazriyansah.boby86@gmail.com">fazriyansah.boby86@gmail.com</a></p>
-        </div>
-        <div>
-          <h4>Informasi</h4>
-          <p>Alamat: Jl. Perintis Kemerdekaan No.64, RT.3/RW.13, Pegangsaan Dua, Kec. Klp. Gading, Jkt Utara, Daerah Khusus Ibukota Jakarta 14250, Indonesia</p>
-          <p>Jam Operasional: 24 Jam</p>
         </div>
       </div>
-      <div class="container footer-bottom">
-        <small>© <span id="year"></span> AMBULANCE MUHAMMAD PUTRA SERVICE. All rights reserved.</small>
+    </section>
+    <!-- Why Choose Us -->
+    <section id="keunggulan" class="py-24 bg-surface">
+      <div
+        class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-20 items-center"
+      >
+        <div>
+          <h2 class="font-headline text-4xl font-bold text-on-surface mb-8">
+             Mengapa Memilih Ambulance Muhammad Putra Service?
+          </h2>
+          <div class="grid sm:grid-cols-2 gap-8">
+            <div class="space-y-4">
+              <div
+                class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center"
+              >
+                <span class="material-symbols-outlined text-primary"
+                  >speed</span
+                >
+              </div>
+              <h4 class="font-bold text-lg">Kecepatan Respon</h4>
+              <p class="text-sm text-secondary">
+                Tim kami disiagakan di berbagai titik strategis untuk menjamin
+                waktu tiba yang tercepat.
+              </p>
+            </div>
+            <div class="space-y-4">
+              <div
+                class="w-12 h-12 rounded-lg bg-secondary-fixed flex items-center justify-center"
+              >
+                <span
+                  class="material-symbols-outlined text-on-secondary-fixed-variant"
+                  >groups</span
+                >
+              </div>
+              <h4 class="font-bold text-lg">Tim Medis Ahli</h4>
+              <p class="text-sm text-secondary">
+                Dokter dan perawat tersertifikasi BTCLS/ATLS yang berpengalaman
+                menangani keadaan darurat.
+              </p>
+            </div>
+            <div class="space-y-4">
+              <div
+                class="w-12 h-12 rounded-lg bg-tertiary-fixed flex items-center justify-center"
+              >
+                <span class="material-symbols-outlined text-tertiary"
+                  >ambulance</span
+                >
+              </div>
+              <h4 class="font-bold text-lg">Armada Modern</h4>
+              <p class="text-sm text-secondary">
+                 Kendaraan yang dirawat rutin dengan standar kebersihan
+                 medis yang ketat.
+              </p>
+            </div>
+            <div class="space-y-4">
+              <div
+                class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center"
+              >
+                <span class="material-symbols-outlined text-on-surface"
+                  >payments</span
+                >
+              </div>
+              <h4 class="font-bold text-lg">Harga Kompetitif</h4>
+              <p class="text-sm text-secondary">
+                Transparansi biaya tanpa biaya tersembunyi untuk semua jenis
+                layanan kami.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-surface-container-low rounded-xl p-4 self-stretch border border-outline-variant/20 shadow-[0_12px_30px_rgba(15,39,68,0.06)]">
+          <img
+            class="w-full aspect-square object-cover object-[center_18%] rounded-lg grayscale"
+            data-alt="close-up of a professional paramedic in clean uniform looking focused while performing medical assessment in a bright clinical setting"
+            src="assets/images/ambulance-fleet-03.jpeg"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Booking Process -->
+    <section class="py-24 bg-on-secondary-fixed text-on-secondary">
+      <div class="max-w-7xl mx-auto px-8">
+        <div class="text-center mb-20">
+          <h2 class="font-headline text-4xl font-bold mb-4">
+            Prosedur Pemesanan 3 Langkah
+          </h2>
+          <p class="opacity-70">
+            Sederhana, cepat, dan efisien untuk membantu Anda di saat krusial.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-12 relative">
+          <!-- Decorative connector line -->
+          <div
+            class="hidden md:block absolute top-1/2 left-1/4 right-1/4 h-px border-t border-dashed border-on-secondary/20 -translate-y-12"
+          ></div>
+          <div class="text-center relative z-10">
+            <div
+              class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-8 ambient-shadow"
+            >
+              <span class="material-symbols-outlined text-3xl">call</span>
+            </div>
+            <h3 class="text-xl font-bold mb-4">1. Hubungi Kami</h3>
+            <p class="opacity-60 text-sm px-6">
+              Telepon atau WhatsApp tim dispatch kami yang siaga 24 jam setiap
+              hari.
+            </p>
+          </div>
+          <div class="text-center relative z-10">
+            <div
+              class="w-20 h-20 bg-surface-container-lowest text-on-secondary-fixed rounded-full flex items-center justify-center mx-auto mb-8 ambient-shadow"
+            >
+              <span class="material-symbols-outlined text-3xl">map</span>
+            </div>
+            <h3 class="text-xl font-bold mb-4">
+              2. Penjadwalan &amp; Dispatch
+            </h3>
+            <p class="opacity-60 text-sm px-6">
+              Kami memverifikasi detail dan segera mengirimkan unit terdekat ke
+              lokasi Anda.
+            </p>
+          </div>
+          <div class="text-center relative z-10">
+            <div
+              class="w-20 h-20 bg-tertiary rounded-full flex items-center justify-center mx-auto mb-8 ambient-shadow"
+            >
+              <span class="material-symbols-outlined text-3xl"
+                >check_circle</span
+              >
+            </div>
+            <h3 class="text-xl font-bold mb-4">3. Layanan Medis</h3>
+            <p class="opacity-60 text-sm px-6">
+              Tim kami tiba dan memberikan penanganan medis profesional hingga
+              tujuan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Area Cakupan -->
+    <section id="lokasi" class="py-24 bg-surface">
+      <div
+        class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-16 items-center"
+      >
+        <div class="order-2 lg:order-1">
+          <div
+            class="bg-surface-container-low rounded-xl p-2 aspect-square md:aspect-video overflow-hidden border border-outline-variant/20"
+          >
+            <div class="w-full h-full bg-slate-200 relative rounded-lg overflow-hidden">
+              <iframe
+                title="Lokasi Ambulance Muhammad Putra Service"
+                class="w-full h-full border-0"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://maps.google.com/maps?q=Jl.%20Perintis%20Kemerdekaan%20No.64%2C%20RT.3%2FRW.13%2C%20Pegangsaan%20Dua%2C%20Kec.%20Klp.%20Gading%2C%20Jkt%20Utara%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2014250%2C%20Indonesia&z=15&output=embed"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="order-1 lg:order-2">
+          <h2 class="font-headline text-4xl font-bold text-on-surface mb-6">
+            Lokasi & Area Layanan Kami
+          </h2>
+          <p class="text-secondary mb-10">
+            Ambulance Muhammad Putra Service berlokasi di Kelapa Gading, Jakarta
+            Utara. Dari titik operasional ini, kami melayani kebutuhan ambulance
+            untuk area Jabodetabek dan sekitarnya dengan respon yang cepat dan
+            koordinasi yang mudah.
+          </p>
+          <ul class="space-y-4">
+            <li class="flex items-center gap-4 py-3 ghost-border">
+              <span class="material-symbols-outlined text-primary"
+                >check_circle</span
+              >
+              <span class="font-semibold"
+                >Berbasis di Kelapa Gading, Jakarta Utara</span
+              >
+            </li>
+            <li class="flex items-center gap-4 py-3 ghost-border">
+              <span class="material-symbols-outlined text-primary"
+                >check_circle</span
+              >
+              <span class="font-semibold"
+                >Melayani area Jabodetabek dan sekitarnya</span
+              >
+            </li>
+            <li class="flex items-center gap-4 py-3 ghost-border">
+              <span class="material-symbols-outlined text-primary"
+                >check_circle</span
+              >
+              <span class="font-semibold"
+                >Siap untuk penjemputan, rujukan, dan standby ambulance</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Armada Preview -->
+    <section class="py-24 bg-surface-container-low overflow-hidden">
+      <div class="max-w-7xl mx-auto px-8">
+        <div class="flex justify-between items-end mb-16">
+          <div>
+            <h2 class="font-headline text-4xl font-bold text-on-surface mb-4">
+              Armada Kami
+            </h2>
+            <p class="text-secondary">
+              Dokumentasi unit ambulans kami yang siap digunakan untuk layanan
+              penjemputan, rujukan, dan standby medis.
+            </p>
+          </div>
+          <div class="flex gap-4">
+            <button
+              type="button"
+              id="armada-prev"
+              aria-label="Lihat armada sebelumnya"
+              class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-white transition-colors"
+            >
+              <span class="material-symbols-outlined">arrow_back</span>
+            </button>
+            <button
+              type="button"
+              id="armada-next"
+              aria-label="Lihat armada berikutnya"
+              class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-white transition-colors"
+            >
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+        <div
+          id="armada-slider"
+          class="flex gap-8 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 [&::-webkit-scrollbar]:hidden"
+          style="scrollbar-width: none"
+        >
+          <div class="group cursor-pointer shrink-0 w-[85%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-05.jpeg" data-title="Ambulance Type A (Advanced)" data-description="Full ICU support dengan ventilator.">
+            <div
+              class="rounded-xl overflow-hidden aspect-[4/5] mb-6 ambient-shadow"
+            >
+              <img
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                data-alt="Side view of a sleek white modern ambulance with emergency lights and red branding"
+                src="assets/images/ambulance-fleet-05.jpeg"
+              />
+            </div>
+            <h4 class="font-bold text-lg mb-1">Ambulance Type A (Advanced)</h4>
+            <p class="text-sm text-secondary">
+              Full ICU support dengan ventilator.
+            </p>
+          </div>
+          <div class="group cursor-pointer shrink-0 w-[85%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-06.jpeg" data-title="Transport Unit Premium" data-description="Kenyamanan maksimal untuk jarak jauh.">
+            <div
+              class="rounded-xl overflow-hidden aspect-[4/5] mb-6 ambient-shadow"
+            >
+              <img
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                data-alt="Interior of ambulance showing clinical organization and portable medical monitor"
+                src="assets/images/ambulance-fleet-06.jpeg"
+              />
+            </div>
+            <h4 class="font-bold text-lg mb-1">Transport Unit Premium</h4>
+            <p class="text-sm text-secondary">
+              Kenyamanan maksimal untuk jarak jauh.
+            </p>
+          </div>
+          <div class="group cursor-pointer shrink-0 w-[85%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-07.jpeg" data-title="Emergency Moto-Response" data-description="Respon cepat kemacetan perkotaan.">
+            <div
+              class="rounded-xl overflow-hidden aspect-[4/5] mb-6 ambient-shadow"
+            >
+              <img
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                data-alt="Professional medical responder standing next to an ambulance with focused expression"
+                src="assets/images/ambulance-fleet-07.jpeg"
+              />
+            </div>
+            <h4 class="font-bold text-lg mb-1">Emergency Moto-Response</h4>
+            <p class="text-sm text-secondary">
+              Respon cepat kemacetan perkotaan.
+            </p>
+          </div>
+          <div class="group cursor-pointer shrink-0 w-[85%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-08.jpeg" data-title="Unit Ambulans Siaga" data-description="Siap digunakan untuk penjemputan pasien dan kebutuhan transportasi medis.">
+            <div
+              class="rounded-xl overflow-hidden aspect-[4/5] mb-6 ambient-shadow"
+            >
+              <img
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                alt="Armada ambulans Muhammad Putra Service 4"
+                src="assets/images/ambulance-fleet-08.jpeg"
+              />
+            </div>
+            <h4 class="font-bold text-lg mb-1">Unit Ambulans Siaga</h4>
+            <p class="text-sm text-secondary">
+              Siap digunakan untuk penjemputan pasien dan kebutuhan transportasi medis.
+            </p>
+          </div>
+          <div class="group cursor-pointer shrink-0 w-[85%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-01.jpeg" data-title="Armada Operasional 24 Jam" data-description="Unit operasional yang siaga untuk kebutuhan ambulans cepat di lapangan.">
+            <div
+              class="rounded-xl overflow-hidden aspect-[4/5] mb-6 ambient-shadow"
+            >
+              <img
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                alt="Armada ambulans Muhammad Putra Service 5"
+                src="assets/images/ambulance-fleet-01.jpeg"
+              />
+            </div>
+            <h4 class="font-bold text-lg mb-1">Armada Operasional 24 Jam</h4>
+            <p class="text-sm text-secondary">
+              Unit operasional yang siaga untuk kebutuhan ambulans cepat di lapangan.
+            </p>
+          </div>
+          <div class="group cursor-pointer shrink-0 w-[85%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-02.jpeg" data-title="Interior & Peralatan Medis" data-description="Menunjang kebutuhan pasien selama perjalanan dengan perlengkapan yang rapi.">
+            <div
+              class="rounded-xl overflow-hidden aspect-[4/5] mb-6 ambient-shadow"
+            >
+              <img
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                alt="Armada ambulans Muhammad Putra Service 6"
+                src="assets/images/ambulance-fleet-02.jpeg"
+              />
+            </div>
+            <h4 class="font-bold text-lg mb-1">Interior & Peralatan Medis</h4>
+            <p class="text-sm text-secondary">
+              Menunjang kebutuhan pasien selama perjalanan dengan perlengkapan yang rapi.
+            </p>
+          </div>
+          <div class="group cursor-pointer shrink-0 w-[85%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-03.jpeg" data-title="Tim & Armada Profesional" data-description="Dukungan armada dan personel untuk pelayanan yang aman dan terkoordinasi.">
+            <div
+              class="rounded-xl overflow-hidden aspect-[4/5] mb-6 ambient-shadow"
+            >
+              <img
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                alt="Armada ambulans Muhammad Putra Service 7"
+                src="assets/images/ambulance-fleet-03.jpeg"
+              />
+            </div>
+            <h4 class="font-bold text-lg mb-1">Tim & Armada Profesional</h4>
+            <p class="text-sm text-secondary">
+              Dukungan armada dan personel untuk pelayanan yang aman dan terkoordinasi.
+            </p>
+          </div>
+          <div class="group cursor-pointer shrink-0 w-[85%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-04.jpeg" data-title="Jangkauan Layanan Jabodetabek" data-description="Mendukung operasional layanan dari titik basis kami di Kelapa Gading.">
+            <div
+              class="rounded-xl overflow-hidden aspect-[4/5] mb-6 ambient-shadow"
+            >
+              <img
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                alt="Armada ambulans Muhammad Putra Service 8"
+                src="assets/images/ambulance-fleet-04.jpeg"
+              />
+            </div>
+            <h4 class="font-bold text-lg mb-1">Jangkauan Layanan Jabodetabek</h4>
+            <p class="text-sm text-secondary">
+              Mendukung operasional layanan dari titik basis kami di Kelapa Gading.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ -->
+    <section id="faq" class="py-24 bg-surface">
+      <div class="max-w-3xl mx-auto px-8">
+        <h2
+          class="font-headline text-4xl font-bold text-on-surface text-center mb-16"
+        >
+          Pertanyaan Umum (FAQ)
+        </h2>
+        <div class="space-y-4">
+          <div
+            class="bg-surface-container-lowest rounded-xl p-6 ambient-shadow"
+          >
+            <button
+              class="w-full flex justify-between items-center text-left font-bold text-lg"
+            >
+              Berapa lama waktu respon tim?
+              <span class="material-symbols-outlined text-primary"
+                >expand_more</span
+              >
+            </button>
+            <div class="mt-4 text-secondary text-sm leading-relaxed">
+              Kami menargetkan waktu tiba di lokasi dalam 15-30 menit untuk
+              wilayah Jabodetabek, tergantung pada kondisi lalu lintas dan
+              ketersediaan unit terdekat.
+            </div>
+          </div>
+          <div
+            class="bg-surface-container-lowest rounded-xl p-6 border border-outline-variant/10"
+          >
+            <button
+              class="w-full flex justify-between items-center text-left font-bold text-lg"
+            >
+              Apakah melayani antar-jemput luar kota?
+              <span class="material-symbols-outlined text-primary"
+                >expand_more</span
+              >
+            </button>
+          </div>
+          <div
+            class="bg-surface-container-lowest rounded-xl p-6 border border-outline-variant/10"
+          >
+            <button
+              class="w-full flex justify-between items-center text-left font-bold text-lg"
+            >
+              Alat medis apa saja yang ada di dalam unit?
+              <span class="material-symbols-outlined text-primary"
+                >expand_more</span
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Final CTA Section -->
+    <section class="py-20">
+      <div class="max-w-7xl mx-auto px-8">
+        <div
+          class="bg-primary-container rounded-xl p-12 md:p-20 text-center relative overflow-hidden ambient-shadow"
+        >
+          <div
+            class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"
+          ></div>
+          <div class="relative z-10 max-w-2xl mx-auto">
+            <h2
+              class="font-headline text-4xl md:text-5xl font-extrabold text-on-primary mb-6 leading-tight"
+            >
+              Keadaan Darurat Tak Bisa Menunggu.
+            </h2>
+            <p class="text-on-primary-container text-lg mb-10 opacity-90">
+              Tim profesional kami siap membantu Anda kapanpun dibutuhkan. Satu
+              panggilan bisa menyelamatkan nyawa.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center">
+              <a
+                href="tel:081283745843"
+                class="bg-white text-primary px-10 py-5 rounded-lg font-black text-xl flex items-center justify-center gap-4 hover:scale-105 transition-transform"
+              >
+                <span class="material-symbols-outlined font-bold">call</span>
+                HUBUNGI SEKARANG
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <a
+      href="https://wa.me/6281283745843"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat WhatsApp Ambulance Muhammad Putra Service"
+      class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white rounded-full shadow-lg hover:scale-105 transition-transform w-14 h-14 flex items-center justify-center"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 32 32"
+        class="w-7 h-7 fill-current"
+        aria-hidden="true"
+      >
+        <path
+          d="M19.11 17.35c-.27-.14-1.58-.78-1.83-.87-.24-.09-.42-.14-.6.14-.18.27-.69.87-.85 1.05-.16.18-.31.2-.58.07-.27-.14-1.12-.41-2.13-1.29-.79-.7-1.33-1.56-1.49-1.83-.16-.27-.02-.42.12-.56.12-.12.27-.31.4-.47.13-.16.18-.27.27-.45.09-.18.04-.34-.02-.47-.07-.14-.6-1.45-.82-1.99-.22-.52-.44-.45-.6-.46h-.51c-.18 0-.47.07-.72.34-.24.27-.94.92-.94 2.24 0 1.32.96 2.59 1.09 2.77.13.18 1.89 2.89 4.57 4.05.64.27 1.13.43 1.52.55.64.2 1.22.17 1.68.1.51-.08 1.58-.65 1.8-1.28.22-.63.22-1.18.16-1.28-.07-.1-.24-.16-.51-.29zM16.03 3.2c-7.09 0-12.82 5.73-12.82 12.8 0 2.25.59 4.45 1.71 6.38L3 29l6.79-1.78a12.83 12.83 0 0 0 6.24 1.59h.01c7.08 0 12.82-5.73 12.82-12.8S23.11 3.2 16.03 3.2zm0 23.43h-.01a10.6 10.6 0 0 1-5.4-1.48l-.39-.23-4.03 1.06 1.08-3.93-.25-.4a10.52 10.52 0 0 1-1.62-5.64c0-5.85 4.77-10.61 10.63-10.61 2.84 0 5.51 1.11 7.52 3.11a10.5 10.5 0 0 1 3.11 7.49c0 5.85-4.77 10.62-10.64 10.62z"
+        />
+      </svg>
+    </a>
+    <div
+      id="armada-lightbox"
+      class="fixed inset-0 z-[60] hidden items-center justify-center bg-slate-950/80 p-6"
+      aria-hidden="true"
+    >
+      <div class="absolute inset-0" data-lightbox-close></div>
+      <div class="relative z-10 w-full max-w-4xl bg-white rounded-2xl overflow-hidden ambient-shadow">
+        <button
+          type="button"
+          id="armada-lightbox-close"
+          aria-label="Tutup preview armada"
+          class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-white/90 text-slate-900 flex items-center justify-center shadow-md"
+        >
+          <span class="material-symbols-outlined">close</span>
+        </button>
+        <div class="grid lg:grid-cols-[1.4fr_0.8fr]">
+          <div class="bg-slate-100">
+            <img
+              id="armada-lightbox-image"
+              src=""
+              alt="Preview armada"
+              class="w-full h-full max-h-[75vh] object-cover"
+            />
+          </div>
+          <div class="p-8 flex flex-col justify-center">
+            <p class="text-xs uppercase tracking-[0.2em] text-primary font-bold mb-4">
+              Galeri Armada
+            </p>
+            <h3 id="armada-lightbox-title" class="text-2xl font-bold text-on-surface mb-4"></h3>
+            <p id="armada-lightbox-description" class="text-secondary leading-relaxed"></p>
+            <a
+              href="https://wa.me/6281283745843"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-8 inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-lg font-bold"
+            >
+              <span class="material-symbols-outlined">chat</span>
+              Tanya Unit via WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      (() => {
+        const slider = document.getElementById("armada-slider");
+        const prev = document.getElementById("armada-prev");
+        const next = document.getElementById("armada-next");
+        const lightbox = document.getElementById("armada-lightbox");
+        const lightboxImage = document.getElementById("armada-lightbox-image");
+        const lightboxTitle = document.getElementById("armada-lightbox-title");
+        const lightboxDescription = document.getElementById("armada-lightbox-description");
+        const lightboxClose = document.getElementById("armada-lightbox-close");
+        const armadaItems = document.querySelectorAll(".armada-item");
+
+        if (slider && prev && next) {
+          const getScrollAmount = () => {
+            const firstCard = slider.querySelector(".snap-start");
+            if (!firstCard) return 320;
+            const styles = window.getComputedStyle(slider);
+            const gap = parseInt(styles.columnGap || styles.gap || 0, 10) || 0;
+            return firstCard.getBoundingClientRect().width + gap;
+          };
+
+          prev.addEventListener("click", () => {
+            slider.scrollBy({ left: -getScrollAmount(), behavior: "smooth" });
+          });
+
+          next.addEventListener("click", () => {
+            slider.scrollBy({ left: getScrollAmount(), behavior: "smooth" });
+          });
+        }
+
+        if (lightbox && lightboxImage && lightboxTitle && lightboxDescription) {
+          const openLightbox = ({ image, title, description }) => {
+            lightboxImage.src = image;
+            lightboxImage.alt = title || "Preview armada";
+            lightboxTitle.textContent = title || "Preview Armada";
+            lightboxDescription.textContent = description || "Dokumentasi armada Ambulance Muhammad Putra Service.";
+            lightbox.classList.remove("hidden");
+            lightbox.classList.add("flex");
+            document.body.classList.add("overflow-hidden");
+            lightbox.setAttribute("aria-hidden", "false");
+          };
+
+          const closeLightbox = () => {
+            lightbox.classList.add("hidden");
+            lightbox.classList.remove("flex");
+            document.body.classList.remove("overflow-hidden");
+            lightbox.setAttribute("aria-hidden", "true");
+          };
+
+          armadaItems.forEach((item) => {
+            item.addEventListener("click", () => {
+              openLightbox({
+                image: item.dataset.image,
+                title: item.dataset.title,
+                description: item.dataset.description,
+              });
+            });
+          });
+
+          lightboxClose?.addEventListener("click", closeLightbox);
+          lightbox.querySelectorAll("[data-lightbox-close]").forEach((el) => {
+            el.addEventListener("click", closeLightbox);
+          });
+
+          document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape" && !lightbox.classList.contains("hidden")) {
+              closeLightbox();
+            }
+          });
+        }
+      })();
+    </script>
+    <!-- Footer -->
+    <footer
+      class="bg-slate-50 dark:bg-slate-950 w-full pt-16 pb-8 border-t border-slate-200 dark:border-slate-800"
+    >
+      <div
+        class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto font-['Inter'] text-sm leading-relaxed"
+      >
+        <div class="col-span-1 md:col-span-1">
+          <span
+            class="text-2xl font-black text-slate-900 dark:text-white mb-4 block"
+            >AMBULANCE MUHAMMAD PUTRA SERVICE</span
+          >
+          <p class="text-slate-500 dark:text-slate-400 mb-6">
+            Penyedia layanan transportasi medis premium dengan standar
+            keselamatan internasional di Indonesia.
+          </p>
+          <div class="flex gap-4">
+            <div
+              class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center"
+            >
+              <span class="material-symbols-outlined text-sm">emergency</span>
+            </div>
+            <div
+              class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center"
+            >
+              <span class="material-symbols-outlined text-sm">call</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4
+            class="font-bold text-slate-900 dark:text-white mb-6 uppercase tracking-widest text-xs"
+          >
+            Menu Utama
+          </h4>
+          <ul class="space-y-4">
+            <li>
+              <a
+                class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:translate-x-1 transition-transform duration-200 block"
+                href="#"
+                >Beranda</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:translate-x-1 transition-transform duration-200 block"
+                href="#layanan"
+                >Layanan</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:translate-x-1 transition-transform duration-200 block"
+                href="#lokasi"
+                >Tentang Kami</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:translate-x-1 transition-transform duration-200 block"
+                href="#faq"
+                >FAQ</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4
+            class="font-bold text-slate-900 dark:text-white mb-6 uppercase tracking-widest text-xs"
+          >
+            Layanan
+          </h4>
+          <ul class="space-y-4">
+            <li>
+              <a
+                class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:translate-x-1 transition-transform duration-200 block"
+                href="tel:081283745843"
+                >Hubungi Darurat</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:translate-x-1 transition-transform duration-200 block"
+                href="#lokasi"
+                >Lokasi & Area Layanan</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:translate-x-1 transition-transform duration-200 block"
+                href="https://wa.me/6281283745843"
+                target="_blank"
+                rel="noopener noreferrer"
+                >WhatsApp 24 Jam</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4
+            class="font-bold text-slate-900 dark:text-white mb-6 uppercase tracking-widest text-xs"
+          >
+            Hubungi Kami
+          </h4>
+          <p class="text-slate-500 dark:text-slate-400 mb-4">
+            Jl. Perintis Kemerdekaan No.64, RT.3/RW.13, Pegangsaan Dua, Kec.
+            Klp. Gading, Jakarta Utara
+          </p>
+          <p class="text-red-700 font-bold text-lg mb-2">0812-8374-5843</p>
+          <p class="text-slate-500 dark:text-slate-400">
+            fazriyansah.boby86@gmail.com
+          </p>
+        </div>
+      </div>
+      <div
+        class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 text-center"
+      >
+        <p class="text-slate-400 text-xs">
+          © 2026 AMBULANCE MUHAMMAD PUTRA SERVICE. Premium Medical Transport
+          Indonesia.
+        </p>
       </div>
     </footer>
-
-    <script src="assets/js/main.js"></script>
   </body>
 </html>
