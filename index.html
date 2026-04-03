@@ -4,6 +4,38 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Ambulance Muhammad Putra Service | Layanan Ambulans 24 Jam Jakarta</title>
+    <meta
+      name="description"
+      content="Ambulance Muhammad Putra Service menyediakan layanan ambulans 24 jam di Kelapa Gading, Jakarta Utara, untuk penjemputan pasien, rujukan antar rumah sakit, dan standby medis area Jabodetabek."
+    />
+    <meta
+      name="keywords"
+      content="ambulance Jakarta, ambulans 24 jam, ambulance Kelapa Gading, ambulance Jakarta Utara, ambulance Jabodetabek, ambulance rujukan rumah sakit"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Ambulance Muhammad Putra Service" />
+    <meta name="theme-color" content="#a20513" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:title" content="Ambulance Muhammad Putra Service | Layanan Ambulans 24 Jam Jakarta" />
+    <meta
+      property="og:description"
+      content="Layanan ambulans 24 jam untuk penjemputan pasien, rujukan antar rumah sakit, dan standby medis di area Jabodetabek."
+    />
+    <meta property="og:image" content="assets/images/ambulance-fleet-01.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ambulance Muhammad Putra Service | Layanan Ambulans 24 Jam Jakarta" />
+    <meta
+      name="twitter:description"
+      content="Layanan ambulans 24 jam area Jabodetabek dengan respon cepat dari Kelapa Gading, Jakarta Utara."
+    />
+    <meta name="twitter:image" content="assets/images/ambulance-fleet-01.jpeg" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23a20513'/%3E%3Cpath d='M32 14c1.2 0 2.2 1 2.2 2.2v11.6H45.8c1.2 0 2.2 1 2.2 2.2v4c0 1.2-1 2.2-2.2 2.2H34.2v11.6c0 1.2-1 2.2-2.2 2.2h-4c-1.2 0-2.2-1-2.2-2.2V36.2H14.2C13 36.2 12 35.2 12 34v-4c0-1.2 1-2.2 2.2-2.2h11.6V16.2c0-1.2 1-2.2 2.2-2.2h4Z' fill='white'/%3E%3C/svg%3E"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
       rel="stylesheet"
@@ -113,6 +145,27 @@
         box-shadow: 0 20px 40px rgba(15, 39, 68, 0.08);
       }
     </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Ambulance Muhammad Putra Service",
+        "description": "Layanan ambulans 24 jam untuk penjemputan pasien, rujukan antar rumah sakit, dan standby medis area Jabodetabek.",
+        "telephone": "+62-812-8374-5843",
+        "email": "fazriyansah.boby86@gmail.com",
+        "image": "assets/images/ambulance-fleet-01.jpeg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Jl. Perintis Kemerdekaan No.64, RT.3/RW.13, Pegangsaan Dua",
+          "addressLocality": "Jakarta Utara",
+          "addressRegion": "DKI Jakarta",
+          "postalCode": "14250",
+          "addressCountry": "ID"
+        },
+        "areaServed": "Jabodetabek",
+        "url": "https://fadli-dev-studio.github.io/ambulance-mps/"
+      }
+    </script>
   </head>
   <body class="bg-surface font-body text-on-surface">
     <!-- Top Contact Bar -->
@@ -148,10 +201,21 @@
       <div
         class="flex justify-between items-center h-20 px-8 max-w-7xl mx-auto"
       >
-        <div
-          class="text-xl font-extrabold tracking-tighter text-slate-900 dark:text-white"
-        >
-          AMBULANCE MUHAMMAD PUTRA SERVICE
+        <div class="flex items-center gap-3 text-slate-900 dark:text-white">
+          <span
+            class="w-11 h-11 rounded-xl bg-primary text-white flex items-center justify-center font-black text-sm tracking-wide shadow-[0_10px_24px_rgba(162,5,19,0.24)]"
+            aria-hidden="true"
+          >
+            AMP
+          </span>
+          <div class="leading-tight">
+            <span class="block text-[11px] uppercase tracking-[0.24em] text-slate-500">
+              Ambulance 24 Jam
+            </span>
+            <span class="block text-base md:text-xl font-extrabold tracking-tighter">
+              AMBULANCE MUHAMMAD PUTRA SERVICE
+            </span>
+          </div>
         </div>
         <div class="hidden md:flex gap-8 items-center">
           <a
@@ -538,12 +602,12 @@
               penjemputan, rujukan, dan standby medis.
             </p>
           </div>
-          <div class="flex gap-4">
+          <div class="flex items-center gap-4">
             <button
               type="button"
               id="armada-prev"
               aria-label="Lihat armada sebelumnya"
-              class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-white transition-colors"
+              class="w-12 h-12 rounded-full border border-outline-variant/60 bg-white/80 flex items-center justify-center hover:bg-white hover:shadow-md transition-all duration-300"
             >
               <span class="material-symbols-outlined">arrow_back</span>
             </button>
@@ -551,7 +615,7 @@
               type="button"
               id="armada-next"
               aria-label="Lihat armada berikutnya"
-              class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-white transition-colors"
+              class="w-12 h-12 rounded-full border border-outline-variant/60 bg-white/80 flex items-center justify-center hover:bg-white hover:shadow-md transition-all duration-300"
             >
               <span class="material-symbols-outlined">arrow_forward</span>
             </button>
@@ -562,9 +626,9 @@
           class="flex gap-8 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 [&::-webkit-scrollbar]:hidden"
           style="scrollbar-width: none"
         >
-          <div class="group cursor-pointer shrink-0 w-[85%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-05.jpeg" data-title="Ambulance Type A (Advanced)" data-description="Full ICU support dengan ventilator.">
+          <div class="group cursor-pointer shrink-0 w-[85%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-05.jpeg" data-title="Unit Ambulans Advanced" data-description="Unit ambulans dengan dukungan perlengkapan medis untuk kebutuhan transportasi pasien intensif.">
             <div
-              class="rounded-xl overflow-hidden aspect-[4/5] mb-6 ambient-shadow"
+              class="rounded-xl overflow-hidden aspect-[4/5] mb-6 ambient-shadow ring-1 ring-black/5 group-hover:-translate-y-1 group-hover:shadow-[0_24px_48px_rgba(15,39,68,0.12)] transition-all duration-500"
             >
               <img
                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -572,14 +636,14 @@
                 src="assets/images/ambulance-fleet-05.jpeg"
               />
             </div>
-            <h4 class="font-bold text-lg mb-1">Ambulance Type A (Advanced)</h4>
+            <h4 class="font-bold text-lg mb-1">Unit Ambulans Advanced</h4>
             <p class="text-sm text-secondary">
-              Full ICU support dengan ventilator.
+              Unit ambulans dengan dukungan perlengkapan medis untuk kebutuhan transportasi pasien intensif.
             </p>
           </div>
-          <div class="group cursor-pointer shrink-0 w-[85%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-06.jpeg" data-title="Transport Unit Premium" data-description="Kenyamanan maksimal untuk jarak jauh.">
+          <div class="group cursor-pointer shrink-0 w-[85%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-06.jpeg" data-title="Unit Transportasi Medis Premium" data-description="Dirancang untuk perjalanan pasien yang nyaman, aman, dan stabil dalam rute menengah hingga jauh.">
             <div
-              class="rounded-xl overflow-hidden aspect-[4/5] mb-6 ambient-shadow"
+              class="rounded-xl overflow-hidden aspect-[4/5] mb-6 ambient-shadow ring-1 ring-black/5 group-hover:-translate-y-1 group-hover:shadow-[0_24px_48px_rgba(15,39,68,0.12)] transition-all duration-500"
             >
               <img
                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -587,14 +651,14 @@
                 src="assets/images/ambulance-fleet-06.jpeg"
               />
             </div>
-            <h4 class="font-bold text-lg mb-1">Transport Unit Premium</h4>
+            <h4 class="font-bold text-lg mb-1">Unit Transportasi Medis Premium</h4>
             <p class="text-sm text-secondary">
-              Kenyamanan maksimal untuk jarak jauh.
+              Dirancang untuk perjalanan pasien yang nyaman, aman, dan stabil dalam rute menengah hingga jauh.
             </p>
           </div>
-          <div class="group cursor-pointer shrink-0 w-[85%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-07.jpeg" data-title="Emergency Moto-Response" data-description="Respon cepat kemacetan perkotaan.">
+          <div class="group cursor-pointer shrink-0 w-[85%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-07.jpeg" data-title="Tim Respon Cepat Lapangan" data-description="Dukungan personel dan kesiapan armada untuk mempercepat koordinasi penanganan di area padat.">
             <div
-              class="rounded-xl overflow-hidden aspect-[4/5] mb-6 ambient-shadow"
+              class="rounded-xl overflow-hidden aspect-[4/5] mb-6 ambient-shadow ring-1 ring-black/5 group-hover:-translate-y-1 group-hover:shadow-[0_24px_48px_rgba(15,39,68,0.12)] transition-all duration-500"
             >
               <img
                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -602,14 +666,14 @@
                 src="assets/images/ambulance-fleet-07.jpeg"
               />
             </div>
-            <h4 class="font-bold text-lg mb-1">Emergency Moto-Response</h4>
+            <h4 class="font-bold text-lg mb-1">Tim Respon Cepat Lapangan</h4>
             <p class="text-sm text-secondary">
-              Respon cepat kemacetan perkotaan.
+              Dukungan personel dan kesiapan armada untuk mempercepat koordinasi penanganan di area padat.
             </p>
           </div>
-          <div class="group cursor-pointer shrink-0 w-[85%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-08.jpeg" data-title="Unit Ambulans Siaga" data-description="Siap digunakan untuk penjemputan pasien dan kebutuhan transportasi medis.">
+          <div class="group cursor-pointer shrink-0 w-[85%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-08.jpeg" data-title="Unit Ambulans Siaga" data-description="Siap digunakan untuk penjemputan pasien, rujukan, dan kebutuhan transportasi medis harian.">
             <div
-              class="rounded-xl overflow-hidden aspect-[4/5] mb-6 ambient-shadow"
+              class="rounded-xl overflow-hidden aspect-[4/5] mb-6 ambient-shadow ring-1 ring-black/5 group-hover:-translate-y-1 group-hover:shadow-[0_24px_48px_rgba(15,39,68,0.12)] transition-all duration-500"
             >
               <img
                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -619,12 +683,12 @@
             </div>
             <h4 class="font-bold text-lg mb-1">Unit Ambulans Siaga</h4>
             <p class="text-sm text-secondary">
-              Siap digunakan untuk penjemputan pasien dan kebutuhan transportasi medis.
+              Siap digunakan untuk penjemputan pasien, rujukan, dan kebutuhan transportasi medis harian.
             </p>
           </div>
-          <div class="group cursor-pointer shrink-0 w-[85%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-01.jpeg" data-title="Armada Operasional 24 Jam" data-description="Unit operasional yang siaga untuk kebutuhan ambulans cepat di lapangan.">
+          <div class="group cursor-pointer shrink-0 w-[85%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-01.jpeg" data-title="Armada Operasional 24 Jam" data-description="Unit operasional yang selalu siap untuk kebutuhan ambulans cepat di area layanan utama.">
             <div
-              class="rounded-xl overflow-hidden aspect-[4/5] mb-6 ambient-shadow"
+              class="rounded-xl overflow-hidden aspect-[4/5] mb-6 ambient-shadow ring-1 ring-black/5 group-hover:-translate-y-1 group-hover:shadow-[0_24px_48px_rgba(15,39,68,0.12)] transition-all duration-500"
             >
               <img
                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -634,12 +698,12 @@
             </div>
             <h4 class="font-bold text-lg mb-1">Armada Operasional 24 Jam</h4>
             <p class="text-sm text-secondary">
-              Unit operasional yang siaga untuk kebutuhan ambulans cepat di lapangan.
+              Unit operasional yang selalu siap untuk kebutuhan ambulans cepat di area layanan utama.
             </p>
           </div>
-          <div class="group cursor-pointer shrink-0 w-[85%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-02.jpeg" data-title="Interior & Peralatan Medis" data-description="Menunjang kebutuhan pasien selama perjalanan dengan perlengkapan yang rapi.">
+          <div class="group cursor-pointer shrink-0 w-[85%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-02.jpeg" data-title="Interior & Perlengkapan Medis" data-description="Penataan interior dan perlengkapan yang mendukung kenyamanan serta keamanan pasien selama perjalanan.">
             <div
-              class="rounded-xl overflow-hidden aspect-[4/5] mb-6 ambient-shadow"
+              class="rounded-xl overflow-hidden aspect-[4/5] mb-6 ambient-shadow ring-1 ring-black/5 group-hover:-translate-y-1 group-hover:shadow-[0_24px_48px_rgba(15,39,68,0.12)] transition-all duration-500"
             >
               <img
                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -647,14 +711,14 @@
                 src="assets/images/ambulance-fleet-02.jpeg"
               />
             </div>
-            <h4 class="font-bold text-lg mb-1">Interior & Peralatan Medis</h4>
+            <h4 class="font-bold text-lg mb-1">Interior & Perlengkapan Medis</h4>
             <p class="text-sm text-secondary">
-              Menunjang kebutuhan pasien selama perjalanan dengan perlengkapan yang rapi.
+              Penataan interior dan perlengkapan yang mendukung kenyamanan serta keamanan pasien selama perjalanan.
             </p>
           </div>
-          <div class="group cursor-pointer shrink-0 w-[85%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-03.jpeg" data-title="Tim & Armada Profesional" data-description="Dukungan armada dan personel untuk pelayanan yang aman dan terkoordinasi.">
+          <div class="group cursor-pointer shrink-0 w-[85%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-03.jpeg" data-title="Tim & Armada Profesional" data-description="Kolaborasi personel dan armada untuk pelayanan yang aman, tertata, dan responsif.">
             <div
-              class="rounded-xl overflow-hidden aspect-[4/5] mb-6 ambient-shadow"
+              class="rounded-xl overflow-hidden aspect-[4/5] mb-6 ambient-shadow ring-1 ring-black/5 group-hover:-translate-y-1 group-hover:shadow-[0_24px_48px_rgba(15,39,68,0.12)] transition-all duration-500"
             >
               <img
                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -664,12 +728,12 @@
             </div>
             <h4 class="font-bold text-lg mb-1">Tim & Armada Profesional</h4>
             <p class="text-sm text-secondary">
-              Dukungan armada dan personel untuk pelayanan yang aman dan terkoordinasi.
+              Kolaborasi personel dan armada untuk pelayanan yang aman, tertata, dan responsif.
             </p>
           </div>
-          <div class="group cursor-pointer shrink-0 w-[85%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-04.jpeg" data-title="Jangkauan Layanan Jabodetabek" data-description="Mendukung operasional layanan dari titik basis kami di Kelapa Gading.">
+          <div class="group cursor-pointer shrink-0 w-[85%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-04.jpeg" data-title="Cakupan Operasional Jabodetabek" data-description="Mendukung operasional layanan dari titik basis kami di Kelapa Gading untuk area Jabodetabek dan sekitarnya.">
             <div
-              class="rounded-xl overflow-hidden aspect-[4/5] mb-6 ambient-shadow"
+              class="rounded-xl overflow-hidden aspect-[4/5] mb-6 ambient-shadow ring-1 ring-black/5 group-hover:-translate-y-1 group-hover:shadow-[0_24px_48px_rgba(15,39,68,0.12)] transition-all duration-500"
             >
               <img
                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -677,9 +741,9 @@
                 src="assets/images/ambulance-fleet-04.jpeg"
               />
             </div>
-            <h4 class="font-bold text-lg mb-1">Jangkauan Layanan Jabodetabek</h4>
+            <h4 class="font-bold text-lg mb-1">Cakupan Operasional Jabodetabek</h4>
             <p class="text-sm text-secondary">
-              Mendukung operasional layanan dari titik basis kami di Kelapa Gading.
+              Mendukung operasional layanan dari titik basis kami di Kelapa Gading untuk area Jabodetabek dan sekitarnya.
             </p>
           </div>
         </div>
@@ -803,6 +867,22 @@
         >
           <span class="material-symbols-outlined">close</span>
         </button>
+        <button
+          type="button"
+          id="armada-lightbox-prev"
+          aria-label="Preview armada sebelumnya"
+          class="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white/90 text-slate-900 flex items-center justify-center shadow-md"
+        >
+          <span class="material-symbols-outlined">arrow_back</span>
+        </button>
+        <button
+          type="button"
+          id="armada-lightbox-next"
+          aria-label="Preview armada berikutnya"
+          class="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white/90 text-slate-900 flex items-center justify-center shadow-md"
+        >
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </button>
         <div class="grid lg:grid-cols-[1.4fr_0.8fr]">
           <div class="bg-slate-100">
             <img
@@ -841,36 +921,95 @@
         const lightboxTitle = document.getElementById("armada-lightbox-title");
         const lightboxDescription = document.getElementById("armada-lightbox-description");
         const lightboxClose = document.getElementById("armada-lightbox-close");
-        const armadaItems = document.querySelectorAll(".armada-item");
+        const lightboxPrev = document.getElementById("armada-lightbox-prev");
+        const lightboxNext = document.getElementById("armada-lightbox-next");
+        const armadaItems = Array.from(document.querySelectorAll(".armada-item"));
+        let activeIndex = 0;
+        let autoSlideInterval;
+        let restartAutoSlideTimeout;
+
+        const scrollToIndex = (index) => {
+          const item = armadaItems[index];
+          if (!item || !slider) return;
+          activeIndex = index;
+          slider.scrollTo({ left: item.offsetLeft, behavior: "smooth" });
+        };
+
+        const syncActiveIndexFromScroll = () => {
+          if (!slider || !armadaItems.length) return;
+          const sliderLeft = slider.scrollLeft;
+          let closestIndex = 0;
+          let closestDistance = Number.POSITIVE_INFINITY;
+
+          armadaItems.forEach((item, index) => {
+            const distance = Math.abs(item.offsetLeft - sliderLeft);
+            if (distance < closestDistance) {
+              closestDistance = distance;
+              closestIndex = index;
+            }
+          });
+
+          activeIndex = closestIndex;
+        };
+
+        const startAutoSlide = () => {
+          if (!slider || armadaItems.length <= 1) return;
+          clearInterval(autoSlideInterval);
+          autoSlideInterval = window.setInterval(() => {
+            const nextIndex = (activeIndex + 1) % armadaItems.length;
+            scrollToIndex(nextIndex);
+          }, 5500);
+        };
+
+        const stopAutoSlide = () => {
+          clearInterval(autoSlideInterval);
+        };
+
+        const restartAutoSlide = () => {
+          clearTimeout(restartAutoSlideTimeout);
+          stopAutoSlide();
+          restartAutoSlideTimeout = window.setTimeout(startAutoSlide, 1800);
+        };
 
         if (slider && prev && next) {
-          const getScrollAmount = () => {
-            const firstCard = slider.querySelector(".snap-start");
-            if (!firstCard) return 320;
-            const styles = window.getComputedStyle(slider);
-            const gap = parseInt(styles.columnGap || styles.gap || 0, 10) || 0;
-            return firstCard.getBoundingClientRect().width + gap;
-          };
-
           prev.addEventListener("click", () => {
-            slider.scrollBy({ left: -getScrollAmount(), behavior: "smooth" });
+            const prevIndex = (activeIndex - 1 + armadaItems.length) % armadaItems.length;
+            scrollToIndex(prevIndex);
+            restartAutoSlide();
           });
 
           next.addEventListener("click", () => {
-            slider.scrollBy({ left: getScrollAmount(), behavior: "smooth" });
+            const nextIndex = (activeIndex + 1) % armadaItems.length;
+            scrollToIndex(nextIndex);
+            restartAutoSlide();
           });
+
+          slider.addEventListener("scroll", () => {
+            window.requestAnimationFrame(syncActiveIndexFromScroll);
+          });
+
+          slider.addEventListener("mouseenter", stopAutoSlide);
+          slider.addEventListener("mouseleave", startAutoSlide);
+          slider.addEventListener("touchstart", stopAutoSlide, { passive: true });
+          slider.addEventListener("touchend", restartAutoSlide, { passive: true });
+
+          startAutoSlide();
         }
 
         if (lightbox && lightboxImage && lightboxTitle && lightboxDescription) {
-          const openLightbox = ({ image, title, description }) => {
-            lightboxImage.src = image;
-            lightboxImage.alt = title || "Preview armada";
-            lightboxTitle.textContent = title || "Preview Armada";
-            lightboxDescription.textContent = description || "Dokumentasi armada Ambulance Muhammad Putra Service.";
+          const openLightbox = (index) => {
+            const item = armadaItems[index];
+            if (!item) return;
+            activeIndex = index;
+            lightboxImage.src = item.dataset.image;
+            lightboxImage.alt = item.dataset.title || "Preview armada";
+            lightboxTitle.textContent = item.dataset.title || "Preview Armada";
+            lightboxDescription.textContent = item.dataset.description || "Dokumentasi armada Ambulance Muhammad Putra Service.";
             lightbox.classList.remove("hidden");
             lightbox.classList.add("flex");
             document.body.classList.add("overflow-hidden");
             lightbox.setAttribute("aria-hidden", "false");
+            stopAutoSlide();
           };
 
           const closeLightbox = () => {
@@ -878,19 +1017,23 @@
             lightbox.classList.remove("flex");
             document.body.classList.remove("overflow-hidden");
             lightbox.setAttribute("aria-hidden", "true");
+            startAutoSlide();
           };
 
-          armadaItems.forEach((item) => {
+          const openAdjacent = (direction) => {
+            const nextIndex = (activeIndex + direction + armadaItems.length) % armadaItems.length;
+            openLightbox(nextIndex);
+          };
+
+          armadaItems.forEach((item, index) => {
             item.addEventListener("click", () => {
-              openLightbox({
-                image: item.dataset.image,
-                title: item.dataset.title,
-                description: item.dataset.description,
-              });
+              openLightbox(index);
             });
           });
 
           lightboxClose?.addEventListener("click", closeLightbox);
+          lightboxPrev?.addEventListener("click", () => openAdjacent(-1));
+          lightboxNext?.addEventListener("click", () => openAdjacent(1));
           lightbox.querySelectorAll("[data-lightbox-close]").forEach((el) => {
             el.addEventListener("click", closeLightbox);
           });
@@ -898,6 +1041,12 @@
           document.addEventListener("keydown", (event) => {
             if (event.key === "Escape" && !lightbox.classList.contains("hidden")) {
               closeLightbox();
+            }
+            if (event.key === "ArrowLeft" && !lightbox.classList.contains("hidden")) {
+              openAdjacent(-1);
+            }
+            if (event.key === "ArrowRight" && !lightbox.classList.contains("hidden")) {
+              openAdjacent(1);
             }
           });
         }
@@ -919,18 +1068,6 @@
             Penyedia layanan transportasi medis premium dengan standar
             keselamatan internasional di Indonesia.
           </p>
-          <div class="flex gap-4">
-            <div
-              class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center"
-            >
-              <span class="material-symbols-outlined text-sm">emergency</span>
-            </div>
-            <div
-              class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center"
-            >
-              <span class="material-symbols-outlined text-sm">call</span>
-            </div>
-          </div>
         </div>
         <div>
           <h4
