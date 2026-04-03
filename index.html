@@ -199,7 +199,7 @@
       class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm h-20"
     >
       <div
-        class="flex justify-between items-center h-20 px-8 max-w-7xl mx-auto"
+        class="flex justify-between items-center h-20 px-4 sm:px-6 md:px-8 max-w-7xl mx-auto gap-3"
       >
         <div class="flex items-center gap-3 text-slate-900 dark:text-white">
           <span
@@ -212,7 +212,7 @@
             <span class="block text-[11px] uppercase tracking-[0.24em] text-slate-500">
               Ambulance 24 Jam
             </span>
-            <span class="block text-base md:text-xl font-extrabold tracking-tighter">
+            <span class="block text-sm sm:text-base md:text-xl font-extrabold tracking-tighter max-w-[150px] sm:max-w-none leading-tight">
               AMBULANCE MUHAMMAD PUTRA SERVICE
             </span>
           </div>
@@ -239,12 +239,13 @@
             >FAQ</a
           >
         </div>
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-2 sm:gap-4 shrink-0">
           <a
             href="tel:081283745843"
-            class="bg-primary text-on-primary px-6 py-2.5 rounded-lg text-sm font-bold active:scale-95 duration-150 ease-in-out inline-flex items-center"
+            class="bg-primary text-on-primary px-3 sm:px-6 py-2.5 rounded-lg text-xs sm:text-sm font-bold active:scale-95 duration-150 ease-in-out inline-flex items-center text-center"
           >
-            Hubungi Ambulans Sekarang
+            <span class="sm:hidden">Hubungi</span>
+            <span class="hidden sm:inline">Hubungi Ambulans Sekarang</span>
           </a>
         </div>
       </div>
@@ -252,17 +253,17 @@
     <!-- Hero Section -->
     <header class="relative pt-32 pb-24 overflow-hidden">
       <div
-        class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-16 items-center"
+        class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center"
       >
         <div class="relative z-10">
           <div class="life-line mb-6"></div>
           <h1
-            class="font-headline text-5xl md:text-7xl font-extrabold leading-[1.1] text-on-surface mb-8 tracking-tight"
+            class="font-headline text-3xl sm:text-5xl md:text-7xl font-extrabold leading-[1.1] text-on-surface mb-6 sm:mb-8 tracking-tight"
           >
             Layanan Ambulans <span class="text-primary">24 Jam</span>, Cepat,
             Terpercaya.
           </h1>
-          <p class="text-lg text-secondary mb-10 max-w-lg leading-relaxed">
+          <p class="text-base sm:text-lg text-secondary mb-8 sm:mb-10 max-w-lg leading-relaxed">
             Siap melayani kebutuhan ambulans 24 jam untuk penjemputan pasien,
             rujukan antar rumah sakit, dan standby medis dengan respon cepat di
             area Jabodetabek dan sekitarnya.
@@ -286,7 +287,7 @@
             </a>
           </div>
         </div>
-        <div class="relative lg:-mr-32">
+        <div class="relative lg:-mr-32 mt-4 lg:mt-0 pb-12 sm:pb-0">
           <div class="rounded-xl overflow-hidden aspect-[4/3] ambient-shadow">
             <img
               alt="Modern Ambulance"
@@ -296,7 +297,7 @@
             />
           </div>
           <div
-            class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-xl ambient-shadow max-w-xs"
+            class="absolute left-4 right-4 -bottom-8 sm:-bottom-6 sm:left-4 sm:right-auto lg:-left-6 bg-surface-container-lowest p-4 sm:p-6 rounded-xl ambient-shadow max-w-none sm:max-w-xs"
           >
             <div class="flex items-center gap-4 mb-2">
               <div
@@ -317,7 +318,7 @@
     </header>
     <!-- Services Highlight (Bento) -->
     <section id="layanan" class="py-24 bg-surface-container-low">
-      <div class="max-w-7xl mx-auto px-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
         <div class="text-center mb-16">
           <span
             class="text-primary font-bold tracking-[0.2em] uppercase text-xs mb-4 block"
@@ -396,7 +397,7 @@
     <!-- Why Choose Us -->
     <section id="keunggulan" class="py-24 bg-surface">
       <div
-        class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-20 items-center"
+        class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center"
       >
         <div>
           <h2 class="font-headline text-4xl font-bold text-on-surface mb-8">
@@ -473,7 +474,7 @@
     </section>
     <!-- Booking Process -->
     <section class="py-24 bg-on-secondary-fixed text-on-secondary">
-      <div class="max-w-7xl mx-auto px-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
         <div class="text-center mb-20">
           <h2 class="font-headline text-4xl font-bold mb-4">
             Prosedur Pemesanan 3 Langkah
@@ -494,7 +495,7 @@
               <span class="material-symbols-outlined text-3xl">call</span>
             </div>
             <h3 class="text-xl font-bold mb-4">1. Hubungi Kami</h3>
-            <p class="opacity-60 text-sm px-6">
+            <p class="opacity-60 text-sm px-1 sm:px-6">
               Telepon atau WhatsApp tim dispatch kami yang siaga 24 jam setiap
               hari.
             </p>
@@ -508,7 +509,7 @@
             <h3 class="text-xl font-bold mb-4">
               2. Penjadwalan &amp; Dispatch
             </h3>
-            <p class="opacity-60 text-sm px-6">
+            <p class="opacity-60 text-sm px-1 sm:px-6">
               Kami memverifikasi detail dan segera mengirimkan unit terdekat ke
               lokasi Anda.
             </p>
@@ -522,7 +523,7 @@
               >
             </div>
             <h3 class="text-xl font-bold mb-4">3. Layanan Medis</h3>
-            <p class="opacity-60 text-sm px-6">
+            <p class="opacity-60 text-sm px-1 sm:px-6">
               Tim kami tiba dan memberikan penanganan medis profesional hingga
               tujuan.
             </p>
@@ -533,7 +534,7 @@
     <!-- Area Cakupan -->
     <section id="lokasi" class="py-24 bg-surface">
       <div
-        class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-16 items-center"
+        class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center"
       >
         <div class="order-2 lg:order-1">
           <div
@@ -591,8 +592,8 @@
     </section>
     <!-- Armada Preview -->
     <section class="py-24 bg-surface-container-low overflow-hidden">
-      <div class="max-w-7xl mx-auto px-8">
-        <div class="flex justify-between items-end mb-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+        <div class="flex flex-col items-start gap-6 sm:flex-row sm:justify-between sm:items-end mb-16">
           <div>
             <h2 class="font-headline text-4xl font-bold text-on-surface mb-4">
               Armada Kami
@@ -623,10 +624,10 @@
         </div>
         <div
           id="armada-slider"
-          class="flex gap-8 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 [&::-webkit-scrollbar]:hidden"
+          class="flex gap-4 sm:gap-6 lg:gap-8 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 [&::-webkit-scrollbar]:hidden"
           style="scrollbar-width: none"
         >
-          <div class="group cursor-pointer shrink-0 w-[85%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-05.jpeg" data-title="Unit Ambulans Advanced" data-description="Unit ambulans dengan dukungan perlengkapan medis untuk kebutuhan transportasi pasien intensif.">
+          <div class="group cursor-pointer shrink-0 w-[92%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-05.jpeg" data-title="Unit Ambulans Advanced" data-description="Unit ambulans dengan dukungan perlengkapan medis untuk kebutuhan transportasi pasien intensif.">
             <div
               class="rounded-xl overflow-hidden aspect-[4/5] mb-6 ambient-shadow ring-1 ring-black/5 group-hover:-translate-y-1 group-hover:shadow-[0_24px_48px_rgba(15,39,68,0.12)] transition-all duration-500"
             >
@@ -641,7 +642,7 @@
               Unit ambulans dengan dukungan perlengkapan medis untuk kebutuhan transportasi pasien intensif.
             </p>
           </div>
-          <div class="group cursor-pointer shrink-0 w-[85%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-06.jpeg" data-title="Unit Transportasi Medis Premium" data-description="Dirancang untuk perjalanan pasien yang nyaman, aman, dan stabil dalam rute menengah hingga jauh.">
+          <div class="group cursor-pointer shrink-0 w-[92%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-06.jpeg" data-title="Unit Transportasi Medis Premium" data-description="Dirancang untuk perjalanan pasien yang nyaman, aman, dan stabil dalam rute menengah hingga jauh.">
             <div
               class="rounded-xl overflow-hidden aspect-[4/5] mb-6 ambient-shadow ring-1 ring-black/5 group-hover:-translate-y-1 group-hover:shadow-[0_24px_48px_rgba(15,39,68,0.12)] transition-all duration-500"
             >
@@ -656,7 +657,7 @@
               Dirancang untuk perjalanan pasien yang nyaman, aman, dan stabil dalam rute menengah hingga jauh.
             </p>
           </div>
-          <div class="group cursor-pointer shrink-0 w-[85%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-07.jpeg" data-title="Tim Respon Cepat Lapangan" data-description="Dukungan personel dan kesiapan armada untuk mempercepat koordinasi penanganan di area padat.">
+          <div class="group cursor-pointer shrink-0 w-[92%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-07.jpeg" data-title="Tim Respon Cepat Lapangan" data-description="Dukungan personel dan kesiapan armada untuk mempercepat koordinasi penanganan di area padat.">
             <div
               class="rounded-xl overflow-hidden aspect-[4/5] mb-6 ambient-shadow ring-1 ring-black/5 group-hover:-translate-y-1 group-hover:shadow-[0_24px_48px_rgba(15,39,68,0.12)] transition-all duration-500"
             >
@@ -671,7 +672,7 @@
               Dukungan personel dan kesiapan armada untuk mempercepat koordinasi penanganan di area padat.
             </p>
           </div>
-          <div class="group cursor-pointer shrink-0 w-[85%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-08.jpeg" data-title="Unit Ambulans Siaga" data-description="Siap digunakan untuk penjemputan pasien, rujukan, dan kebutuhan transportasi medis harian.">
+          <div class="group cursor-pointer shrink-0 w-[92%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-08.jpeg" data-title="Unit Ambulans Siaga" data-description="Siap digunakan untuk penjemputan pasien, rujukan, dan kebutuhan transportasi medis harian.">
             <div
               class="rounded-xl overflow-hidden aspect-[4/5] mb-6 ambient-shadow ring-1 ring-black/5 group-hover:-translate-y-1 group-hover:shadow-[0_24px_48px_rgba(15,39,68,0.12)] transition-all duration-500"
             >
@@ -686,7 +687,7 @@
               Siap digunakan untuk penjemputan pasien, rujukan, dan kebutuhan transportasi medis harian.
             </p>
           </div>
-          <div class="group cursor-pointer shrink-0 w-[85%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-01.jpeg" data-title="Armada Operasional 24 Jam" data-description="Unit operasional yang selalu siap untuk kebutuhan ambulans cepat di area layanan utama.">
+          <div class="group cursor-pointer shrink-0 w-[92%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-01.jpeg" data-title="Armada Operasional 24 Jam" data-description="Unit operasional yang selalu siap untuk kebutuhan ambulans cepat di area layanan utama.">
             <div
               class="rounded-xl overflow-hidden aspect-[4/5] mb-6 ambient-shadow ring-1 ring-black/5 group-hover:-translate-y-1 group-hover:shadow-[0_24px_48px_rgba(15,39,68,0.12)] transition-all duration-500"
             >
@@ -701,7 +702,7 @@
               Unit operasional yang selalu siap untuk kebutuhan ambulans cepat di area layanan utama.
             </p>
           </div>
-          <div class="group cursor-pointer shrink-0 w-[85%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-02.jpeg" data-title="Interior & Perlengkapan Medis" data-description="Penataan interior dan perlengkapan yang mendukung kenyamanan serta keamanan pasien selama perjalanan.">
+          <div class="group cursor-pointer shrink-0 w-[92%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-02.jpeg" data-title="Interior & Perlengkapan Medis" data-description="Penataan interior dan perlengkapan yang mendukung kenyamanan serta keamanan pasien selama perjalanan.">
             <div
               class="rounded-xl overflow-hidden aspect-[4/5] mb-6 ambient-shadow ring-1 ring-black/5 group-hover:-translate-y-1 group-hover:shadow-[0_24px_48px_rgba(15,39,68,0.12)] transition-all duration-500"
             >
@@ -716,7 +717,7 @@
               Penataan interior dan perlengkapan yang mendukung kenyamanan serta keamanan pasien selama perjalanan.
             </p>
           </div>
-          <div class="group cursor-pointer shrink-0 w-[85%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-03.jpeg" data-title="Tim & Armada Profesional" data-description="Kolaborasi personel dan armada untuk pelayanan yang aman, tertata, dan responsif.">
+          <div class="group cursor-pointer shrink-0 w-[92%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-03.jpeg" data-title="Tim & Armada Profesional" data-description="Kolaborasi personel dan armada untuk pelayanan yang aman, tertata, dan responsif.">
             <div
               class="rounded-xl overflow-hidden aspect-[4/5] mb-6 ambient-shadow ring-1 ring-black/5 group-hover:-translate-y-1 group-hover:shadow-[0_24px_48px_rgba(15,39,68,0.12)] transition-all duration-500"
             >
@@ -731,7 +732,7 @@
               Kolaborasi personel dan armada untuk pelayanan yang aman, tertata, dan responsif.
             </p>
           </div>
-          <div class="group cursor-pointer shrink-0 w-[85%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-04.jpeg" data-title="Cakupan Operasional Jabodetabek" data-description="Mendukung operasional layanan dari titik basis kami di Kelapa Gading untuk area Jabodetabek dan sekitarnya.">
+          <div class="group cursor-pointer shrink-0 w-[92%] sm:w-[60%] lg:w-[32%] snap-start armada-item" data-image="assets/images/ambulance-fleet-04.jpeg" data-title="Cakupan Operasional Jabodetabek" data-description="Mendukung operasional layanan dari titik basis kami di Kelapa Gading untuk area Jabodetabek dan sekitarnya.">
             <div
               class="rounded-xl overflow-hidden aspect-[4/5] mb-6 ambient-shadow ring-1 ring-black/5 group-hover:-translate-y-1 group-hover:shadow-[0_24px_48px_rgba(15,39,68,0.12)] transition-all duration-500"
             >
@@ -751,7 +752,7 @@
     </section>
     <!-- FAQ -->
     <section id="faq" class="py-24 bg-surface">
-      <div class="max-w-3xl mx-auto px-8">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 md:px-8">
         <h2
           class="font-headline text-4xl font-bold text-on-surface text-center mb-16"
         >
@@ -762,10 +763,10 @@
             class="bg-surface-container-lowest rounded-xl p-6 ambient-shadow"
           >
             <button
-              class="w-full flex justify-between items-center text-left font-bold text-lg"
+              class="w-full flex justify-between items-start gap-4 text-left font-bold text-base sm:text-lg"
             >
               Berapa lama waktu respon tim?
-              <span class="material-symbols-outlined text-primary"
+              <span class="material-symbols-outlined text-primary shrink-0"
                 >expand_more</span
               >
             </button>
@@ -779,10 +780,10 @@
             class="bg-surface-container-lowest rounded-xl p-6 border border-outline-variant/10"
           >
             <button
-              class="w-full flex justify-between items-center text-left font-bold text-lg"
+              class="w-full flex justify-between items-start gap-4 text-left font-bold text-base sm:text-lg"
             >
               Apakah melayani antar-jemput luar kota?
-              <span class="material-symbols-outlined text-primary"
+              <span class="material-symbols-outlined text-primary shrink-0"
                 >expand_more</span
               >
             </button>
@@ -791,10 +792,10 @@
             class="bg-surface-container-lowest rounded-xl p-6 border border-outline-variant/10"
           >
             <button
-              class="w-full flex justify-between items-center text-left font-bold text-lg"
+              class="w-full flex justify-between items-start gap-4 text-left font-bold text-base sm:text-lg"
             >
               Alat medis apa saja yang ada di dalam unit?
-              <span class="material-symbols-outlined text-primary"
+              <span class="material-symbols-outlined text-primary shrink-0"
                 >expand_more</span
               >
             </button>
@@ -804,16 +805,16 @@
     </section>
     <!-- Final CTA Section -->
     <section class="py-20">
-      <div class="max-w-7xl mx-auto px-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
         <div
-          class="bg-primary-container rounded-xl p-12 md:p-20 text-center relative overflow-hidden ambient-shadow"
+          class="bg-primary-container rounded-xl p-6 sm:p-8 md:p-20 text-center relative overflow-hidden ambient-shadow"
         >
           <div
             class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"
           ></div>
           <div class="relative z-10 max-w-2xl mx-auto">
             <h2
-              class="font-headline text-4xl md:text-5xl font-extrabold text-on-primary mb-6 leading-tight"
+              class="font-headline text-3xl sm:text-4xl md:text-5xl font-extrabold text-on-primary mb-6 leading-tight"
             >
               Keadaan Darurat Tak Bisa Menunggu.
             </h2>
@@ -824,7 +825,7 @@
             <div class="flex flex-col sm:flex-row gap-6 justify-center">
               <a
                 href="tel:081283745843"
-                class="bg-white text-primary px-10 py-5 rounded-lg font-black text-xl flex items-center justify-center gap-4 hover:scale-105 transition-transform"
+                class="bg-white text-primary px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-black text-base sm:text-xl flex items-center justify-center gap-4 hover:scale-105 transition-transform"
               >
                 <span class="material-symbols-outlined font-bold">call</span>
                 HUBUNGI SEKARANG
