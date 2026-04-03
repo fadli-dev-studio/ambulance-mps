@@ -168,6 +168,33 @@
     </script>
   </head>
   <body class="bg-surface font-body text-on-surface">
+    <div
+      id="preview-popup"
+      class="fixed inset-0 z-[70] flex items-center justify-center bg-slate-950/70 p-4"
+      aria-hidden="false"
+    >
+      <div class="w-full max-w-md rounded-2xl bg-white p-6 sm:p-8 text-center ambient-shadow">
+        <div class="w-14 h-14 mx-auto mb-5 rounded-2xl bg-primary text-white flex items-center justify-center font-black text-base tracking-wide shadow-[0_10px_24px_rgba(162,5,19,0.24)]">
+          FD
+        </div>
+        <p class="text-[11px] uppercase tracking-[0.24em] text-slate-500 mb-3">
+          Preview Website
+        </p>
+        <h2 class="font-headline text-2xl sm:text-3xl font-extrabold text-on-surface mb-3">
+          Ini adalah website preview dari Fadli Dev Studio
+        </h2>
+        <p class="text-secondary text-sm sm:text-base leading-relaxed mb-6">
+          Tampilan ini digunakan untuk peninjauan awal sebelum finalisasi lebih lanjut.
+        </p>
+        <button
+          type="button"
+          id="preview-popup-close"
+          class="bg-primary text-on-primary px-8 py-3 rounded-lg font-bold inline-flex items-center justify-center min-w-28 hover:bg-primary-container transition-colors"
+        >
+          OK
+        </button>
+      </div>
+    </div>
     <!-- Top Contact Bar -->
     <div
       class="bg-on-secondary-fixed text-on-secondary h-12 hidden md:flex items-center"
@@ -914,6 +941,8 @@
     </div>
     <script>
       (() => {
+        const previewPopup = document.getElementById("preview-popup");
+        const previewPopupClose = document.getElementById("preview-popup-close");
         const slider = document.getElementById("armada-slider");
         const prev = document.getElementById("armada-prev");
         const next = document.getElementById("armada-next");
@@ -971,6 +1000,14 @@
           stopAutoSlide();
           restartAutoSlideTimeout = window.setTimeout(startAutoSlide, 1800);
         };
+
+        const closePreviewPopup = () => {
+          if (!previewPopup) return;
+          previewPopup.classList.add("hidden");
+          previewPopup.setAttribute("aria-hidden", "true");
+        };
+
+        previewPopupClose?.addEventListener("click", closePreviewPopup);
 
         if (slider && prev && next) {
           prev.addEventListener("click", () => {
@@ -1040,6 +1077,9 @@
           });
 
           document.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" && previewPopup && !previewPopup.classList.contains("hidden")) {
+              closePreviewPopup();
+            }
             if (event.key === "Escape" && !lightbox.classList.contains("hidden")) {
               closeLightbox();
             }
